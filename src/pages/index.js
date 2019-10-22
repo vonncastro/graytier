@@ -165,7 +165,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -196,7 +196,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -221,7 +221,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -296,7 +296,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -322,7 +322,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -351,7 +351,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -379,7 +379,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -409,7 +409,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -439,7 +439,7 @@ class IndexPage extends React.Component {
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
-                          delay="1000"
+                          delay="500"
                           className="diamond-div"
                         >
                           <div className="diamond mx-auto">
@@ -613,13 +613,8 @@ class IndexPage extends React.Component {
                               <h4 className="m-0">{title}</h4>
                             </Link>
                             <span className="small text-uppercase text-muted">
-                              {node.publishedAt}
+                              {/*{node.publishedAt}*/} October 09, 2019
                             </span>
-                            {/*<BasePortableText
-                              blocks={node._rawExcerpt}
-                              className="truncate-9 text-muted"
-                            />*/}
-
                             <div className="truncate-9 text-muted">
                               <BasePortableText blocks={node._rawExcerpt} />
                             </div>
