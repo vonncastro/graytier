@@ -1,31 +1,94 @@
-import React from "react";
-import { Link } from "gatsby";
-import { Nav, Dropdown, NavItem } from 'react-bootstrap'
+import React from 'react'
+import { Link } from 'gatsby'
+import { Nav } from 'react-bootstrap'
+import Collapsible from 'react-collapsible'
+
 import './menu.css'
 
-
 export default () => (
-
   <div className="navigation">
     <Nav className="flex-column">
-      <Nav.Item><Link to="/">Home</Link></Nav.Item>
-      <Nav.Item><Link to="/blog">Blog</Link></Nav.Item>
-      <Nav.Item><Link to="/contact">Contact Us</Link></Nav.Item>
-      <Dropdown as={NavItem}>
-        <Dropdown.Toggle as={Nav.Link}>Dropdown</Dropdown.Toggle>
-        <Dropdown.Menu>
-          <Dropdown.Item>Hello there!</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-      <Dropdown as={NavItem}>
-        <Link variant="success" className="float-left" to="/">Dropdown Split Button</Link>
-        <Dropdown.Toggle split id="dropdown-split-basic"/>
-        <Dropdown.Menu>
-          <Dropdown.Item hred="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item hred="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item hred="#/action-3">Something else</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+      <ul className="navlist">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Collapsible trigger="Company">
+            <ul className="submenu">
+              <li>
+                <Link to="/">About</Link>
+              </li>
+              <li>
+                <Link to="/">Partners</Link>
+              </li>
+              <li>
+                <Link to="/">Services</Link>
+              </li>
+              <li>
+                <Collapsible trigger="Careers">
+                  <ul className="submenu">
+                    <li>
+                      <Link to="/">Current Openings</Link>
+                    </li>
+                    <li>
+                      <Link to="/">Benefits</Link>
+                    </li>
+                  </ul>
+                </Collapsible>
+              </li>
+            </ul>
+          </Collapsible>
+        </li>
+        <li>
+          <Collapsible trigger="Resources">
+            <ul className="submenu">
+              <li>
+                <Link to="/">Blog</Link>
+              </li>
+              <li>
+                <Link to="/">News</Link>
+              </li>
+            </ul>
+          </Collapsible>
+        </li>
+        <li>
+          <Link to="/">Contact Us</Link>
+        </li>
+      </ul>
+      <div className="d-block text-center pt-3">
+        <a
+          className="social-link"
+          href="https://facebook.com/GrayTierTechnologies"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-facebook" />
+        </a>
+        <a
+          className="social-link"
+          href=" https://twitter.com/graytier"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-twitter" />
+        </a>
+        <a
+          className="social-link"
+          href="https://www.instagram.com/graytiertechnologies/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-instagram" />
+        </a>
+        <a
+          className="social-link"
+          href="https://www.linkedin.com/company/gray-tier-technologies-llc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa fa-linkedin" />
+        </a>
+      </div>
     </Nav>
   </div>
 )

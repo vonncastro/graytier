@@ -1,28 +1,43 @@
-import React from "react"
+import React from 'react'
 import { Link } from 'gatsby'
 import Sticky from 'react-sticky-el'
 import SideBarMenu from './Sidebar'
-import styl from './header.module.css'
+import './header.css'
+
+import Logo from '../images/logo.png'
 
 const Header = () => (
   <header>
-    <Sticky 
-      className={styl.stickyWrapper}
-      stickyClassName={styl.isSticky}
+    <Sticky
+      className="sticky-wrapper"
+      stickyClassName="is-sticky"
       stickyStyle={{ transform: 'unset', zIndex: '2' }}
-      >
-        <div className={`bg-primary ${styl.menuContainer}`}>
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-6">
-                <Link className="text-white" to="/">LOGO</Link>  
+    >
+      <div className="menu-container">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-9 col-md-4">
+              <Link className="logo" to="/">
+                <img
+                  className="img-fluid header-logo"
+                  src={Logo}
+                  alt="Gray Tier Technologies"
+                />
+              </Link>
+            </div>
+            <div className="col-md-7 text-right d-none d-md-inline-block">
+              <div className="header-cta">
+                <a className="btn btn-primary" role="button" href="/">
+                  Contact Us
+                </a>
               </div>
-              <div className="col-6">
-                <SideBarMenu/>
-              </div>
+            </div>
+            <div className="col-3 col-md-1 text-right">
+              <SideBarMenu />
             </div>
           </div>
         </div>
+      </div>
     </Sticky>
   </header>
 )

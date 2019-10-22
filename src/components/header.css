@@ -1,0 +1,27 @@
+.sticky-wrapper {
+	transform: unset !important;
+	background: #ffffff;
+	border-bottom: 1px solid #d5d9de;
+}
+.is-sticky .menu-container {
+	padding: 0.5rem 0;
+}
+.menu-container {
+	padding: 1rem 0;
+	transition: padding 400ms ease-in-out;
+}
+
+header {
+	z-index: 999;
+	position: relative;
+	background: #ffffff;
+}
+
+header .logo {
+	opacity: 1;
+}
+
+.is-sticky .logo img {
+	height: 65px;
+	transition: all 0.35s ease-in-out;
+}

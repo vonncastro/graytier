@@ -1,6 +1,10 @@
 .navigation {
-  padding: 3rem;
+  text-align: left;
+  background: #1a222b;
+  padding: 2rem;
 }
+
+/*
 .navigation .nav-item > a {
   border: none;
   box-shadow: none;
@@ -14,7 +18,7 @@
   padding: 0;
   background-color: transparent;
   color: var(--blue);
-  border:none;
+  border: none;
 }
 .navigation .dropdown .dropdown-toggle:focus {
   box-shadow: none !important;
@@ -32,4 +36,62 @@
 }
 .navigation .dropdown-menu .dropdown-item {
   box-shadow: none;
+}
+*/
+
+.navlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlist > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+.Collapsible__trigger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.navigation li:last-child {
+  margin-bottom: 0;
+}
+
+.Collapsible__trigger.is-open:after {
+  transform: rotateZ(180deg);
+}
+
+.Collapsible__trigger:after {
+  font-family: 'FontAwesome';
+  content: '\F107';
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  transition: transform 300ms;
+}
+
+.Collapsible__trigger,
+.navigation li a {
+  color: #ffffff;
+  opacity: 0.85;
+  transition: all 0.35s ease-in-out;
+}
+
+.submenu {
+  margin: 5px 0 0 0;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+}
+
+.Collapsible__trigger:hover,
+.navigation li a:hover {
+  color: #3ba6de;
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
 }

@@ -7,10 +7,9 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   siteMetadata: {
-    title: `WebriQ Gatsby + Sanity Starter Template`,
-    author: `WebriQ`,
-    description: `WebriQ Gatsby Starter Template with its blog posts coming Sanity app instance.`,
-    siteUrl: `https://webriq-gatsby-strapi-starter-template.webriq.me/`,
+    title: `Gray Tier Technologies, LLC`,
+    author: `Gray Tier`,
+    description: `Gray Tier is an advanced consulting company that focuses on, developing, technical solutions to the toughest cyber security challenges faced by both enterprise and government customers.`,
     social: {
       twitter: `kylemathews`,
     },
@@ -42,8 +41,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `open sans\:400,600,700,800`,
-          `montserrat\:400,500,600,700`, // you can also specify font weights and styles
+          `assistant\:300,400,600,700`,
+          `bree serif`, // you can also specify font weights and styles
         ],
       },
     },
