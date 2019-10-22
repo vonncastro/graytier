@@ -468,17 +468,17 @@ class IndexPage extends React.Component {
             </div>
           </div>
           <div className="partners-section">
-            <div className="partners-navs">
-              <i id="logo-prev" className="fa fa-angle-left review-nav" />
-              <i id="logo-next" className="fa fa-angle-right review-nav" />
-            </div>
-            <div className="container-fluid">
-              <div className="row justify-content-center">
-                <div className="col-10">
-                  <h2 className="font-weight-bold display-4 text-blue">
-                    Our Partners
-                  </h2>
-                  <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateIn="fadeIn">
+              <div className="partners-navs">
+                <i id="logo-prev" className="fa fa-angle-left review-nav" />
+                <i id="logo-next" className="fa fa-angle-right review-nav" />
+              </div>
+              <div className="container-fluid">
+                <div className="row justify-content-center">
+                  <div className="col-10">
+                    <h2 className="font-weight-bold display-4 text-blue">
+                      Our Partners
+                    </h2>
                     <LazyLoadComponent>
                       <Swiper {...logos} className>
                         <div>
@@ -553,10 +553,10 @@ class IndexPage extends React.Component {
                         </div>
                       </Swiper>
                     </LazyLoadComponent>
-                  </ScrollAnimation>
+                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
           <div className="overview">
             <div className="container">
