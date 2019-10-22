@@ -76,26 +76,26 @@ class IndexPage extends React.Component {
                 particles: {
                   number: {
                     value: 80,
-                    density: {
-                      enable: true,
-                    },
                   },
-                  opacity: {
-                    value: 0.1,
+                  size: {
+                    value: 3,
                   },
                 },
                 interactivity: {
-                  detect_on: 'canvas',
                   events: {
                     onhover: {
                       enable: true,
-                      mode: 'repulse',
+                      mode: 'bubble',
                     },
-                    onclick: {
-                      enable: true,
-                      mode: 'push',
+                  },
+                  modes: {
+                    bubble: {
+                      distance: 400,
+                      size: 3.6709910941756063,
+                      duration: 2,
+                      opacity: 1,
+                      speed: 3,
                     },
-                    resize: true,
                   },
                 },
               }}
