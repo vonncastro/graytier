@@ -10,6 +10,7 @@ module.exports = {
     title: `Gray Tier Technologies, LLC`,
     author: `Gray Tier`,
     description: `Gray Tier is an advanced consulting company that focuses on, developing, technical solutions to the toughest cyber security challenges faced by both enterprise and government customers.`,
+    siteUrl: `https://graytier.netlify.com/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -112,7 +113,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#f7f7f7`,
         display: `minimal-ui`,
-        icon: `static/gatsby-icon.png`,
+        icon: `static/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
