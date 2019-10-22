@@ -738,7 +738,7 @@ export const indexPageQuery = graphql`
         node {
           id
           title
-          publishedAt(formatString: "MMMM DD, YYYY")
+          publishedAt
           _rawExcerpt
           slug {
             current
