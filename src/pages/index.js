@@ -10,7 +10,8 @@ import BasePortableText from '@sanity/block-content-to-react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 
-import Particles from 'react-particles-js'
+import HeroParticles from '../components/particles'
+import Overview from '../components/overview'
 import Hero from '../images/hero.png'
 import LogoImg from '../images/logo-img.png'
 import ThreatSimulation from '../images/threat-simulation.png'
@@ -70,36 +71,7 @@ class IndexPage extends React.Component {
         <SEO title={siteTitle} description={siteDescription} />
         <div>
           <div className="hero-section">
-            <Particles
-              className="hero-particles"
-              params={{
-                particles: {
-                  number: {
-                    value: 80,
-                  },
-                  size: {
-                    value: 3,
-                  },
-                },
-                interactivity: {
-                  events: {
-                    onhover: {
-                      enable: true,
-                      mode: 'bubble',
-                    },
-                  },
-                  modes: {
-                    bubble: {
-                      distance: 400,
-                      size: 3.6709910941756063,
-                      duration: 2,
-                      opacity: 1,
-                      speed: 3,
-                    },
-                  },
-                },
-              }}
-            />
+            <HeroParticles />
             <div className="container">
               <img src={Hero} className="hero-img" alt="Gray Tier" />
               <div className="row">
@@ -253,7 +225,7 @@ class IndexPage extends React.Component {
                     <h2 className="display-3 font-weight-bold pb-3">
                       Who We Are
                     </h2>
-                    <Link className="btn btn-primary" role="button" to="/">
+                    <Link className="btn btn-primary" role="button" to="/about">
                       About Us
                     </Link>
                   </ScrollAnimation>
@@ -558,29 +530,7 @@ class IndexPage extends React.Component {
               </div>
             </ScrollAnimation>
           </div>
-          <div className="overview">
-            <div className="container">
-              <ScrollAnimation animateIn="fadeIn">
-                <img
-                  className="mb-4"
-                  src={LogoImg}
-                  alt="Gray Tier"
-                  width="100px"
-                />
-                <h2 className="pb-4 font-body">
-                  Contact us for an overview of our capabilities and examples of
-                  how clients have benefited from our consultation.
-                </h2>
-                <Link
-                  className="btn btn-primary btn-lg btn-ripple"
-                  role="button"
-                  to="/"
-                >
-                  Get an Overview Today
-                </Link>
-              </ScrollAnimation>
-            </div>
-          </div>
+          <Overview />
 
           <div className="resources">
             <div className="container-fluid h-100">
