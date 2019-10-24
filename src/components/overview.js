@@ -9,12 +9,14 @@ class GetAnOverview extends React.Component {
     return (
       <div className="overview">
         <div className="container">
-          <ScrollAnimation animateIn="fadeIn">
-            <img className="mb-4" src={LogoImg} alt="Gray Tier" width="100px" />
-            <h2 className="pb-4 font-body">
+          <img className="mb-4" src={LogoImg} alt="Gray Tier" width="100px" />
+          <ScrollAnimation animateIn="fadeInDown">
+            <h2 className="pb-4 text-white font-weight-normal">
               Contact us for an overview of our capabilities and examples of how
               clients have benefited from our consultation.
             </h2>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp">
             <Link
               className="btn btn-primary btn-lg btn-ripple"
               role="button"

@@ -17,6 +17,13 @@ import ThreatSimulation from '../images/threat-simulation.png'
 import Consulting from '../images/consulting.png'
 import SoftwareRD from '../images/software-r-d.png'
 
+import ATFimg from '../images/atf-img.png'
+import DownArrow from '../images/down-arrow.svg'
+
+import IconConsulting from '../images/icon-consulting.svg'
+import IconSoftware from '../images/icon-software.svg'
+import IconThreat from '../images/icon-threat.svg'
+
 import RedTeaming from '../images/red-teaming.png'
 import PenetrationTesting from '../images/penetration-testing.png'
 import ApplicationTesting from '../images/application-testing.png'
@@ -70,7 +77,8 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} description={siteDescription} />
         <div>
-          <div className="hero-section">
+          {/*
+        <div className="hero-section">
             <HeroParticles />
             <div className="container">
               <img src={Hero} className="hero-img" alt="Gray Tier" />
@@ -120,7 +128,7 @@ class IndexPage extends React.Component {
           <div className="services">
             <div className="container">
               <div className="pb-3 text-white text-center">
-                <h2 className="font-weight-bold text-blue display-4">
+                <h2 className="font-weight-bold display-4">
                   Protect Your Assets!
                 </h2>
                 <p className="lead">
@@ -131,7 +139,7 @@ class IndexPage extends React.Component {
                 </p>
               </div>
               <div className="row text-center justify-content-center">
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
                       <div>
@@ -162,7 +170,7 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
                       <div>
@@ -187,7 +195,7 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
                       <div>
@@ -256,15 +264,163 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </div>
+        */}
+
+          <div className="above-the-fold">
+            <img className="atf-img" src={ATFimg} alt="" />
+            <div className="container">
+              <ScrollAnimation animateIn="fadeInDown" duration="2">
+                <h2 className="text-blue">Nosce Te Ipsum</h2>
+                <h1 className="text-white font-weight-bold display-4">
+                  Know Yourself. Know Your Enemy.
+                </h1>
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                delay="1000"
+                scrollableParentSelector=".above-the-fold"
+              >
+                <div className="row justify-content-center py-3">
+                  <div className="col-md-8">
+                    <p className="lead text-white font-weight-light">
+                      Gray Tier is an advanced consulting company that focuses
+                      on, developing, technical solutions to the toughest cyber
+                      security challenges faced by both enterprise and
+                      government customers.
+                    </p>
+                  </div>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInUp"
+                delay="2000"
+                scrollableParentSelector=".above-the-fold"
+              >
+                <button
+                  className="btn btn-primary btn-ripple mt-4"
+                  type="button"
+                >
+                  Get an Overview Today
+                </button>
+              </ScrollAnimation>
+              <ScrollAnimation
+                animateIn="fadeInDown"
+                delay="2500"
+                scrollableParentSelector=".above-the-fold"
+              >
+                <div className="mt-5 pt-4">
+                  <a href="#solutions">
+                    <img src={DownArrow} alt="scroll down" width="42px" />
+                  </a>
+                </div>
+              </ScrollAnimation>
+            </div>
+          </div>
+
+          <div className="below-atf" id="solutions">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-4 mb-3">
+                  <ScrollAnimation animateIn="fadeInLeft" className="h-100">
+                    <div className="shadow-lg bg-white h-100 text-center col-with-link">
+                      <img className="img-fluid" src={IconThreat} alt="icon" />
+                      <h4 className="font-weight-bold py-3">
+                        Threat Simulation
+                      </h4>
+                      <p>
+                        Our operators can conduct a full range of InfoSec
+                        operations from network infiltration and intelligence
+                        gathering to implementing tailored effects.
+                      </p>
+                      <div className="col-link">
+                        <Link className="arrow-link" to="/">
+                          Learn More
+                          <i className="fa fa-chevron-circle-right" />
+                        </Link>
+                      </div>
+                    </div>
+                  </ScrollAnimation>
+                </div>
+                <div className="col-md-4 mb-3">
+                  <ScrollAnimation animateIn="fadeInUp" className="h-100">
+                    <div className="shadow-lg bg-white h-100 text-center col-with-link">
+                      <img
+                        className="img-fluid"
+                        src={IconConsulting}
+                        alt="icon"
+                      />
+                      <h4 className="font-weight-bold py-3">Consulting</h4>
+                      <p>
+                        Our consulting services are tailored to help our clients
+                        solve their toughest security challenges.
+                      </p>
+                      <div className="col-link">
+                        <Link className="arrow-link" to="/">
+                          Learn More
+                          <i className="fa fa-chevron-circle-right" />
+                        </Link>
+                      </div>
+                    </div>
+                  </ScrollAnimation>
+                </div>
+                <div className="col-md-4 mb-3">
+                  <ScrollAnimation animateIn="fadeInRight" className="h-100">
+                    <div className="shadow-lg bg-white h-100 text-center col-with-link">
+                      <img
+                        className="img-fluid"
+                        src={IconSoftware}
+                        alt="icon"
+                      />
+                      <h4 className="font-weight-bold py-3">
+                        Threat Simulation
+                      </h4>
+                      <p>
+                        We specialize in developing bespoke offensive and
+                        defensive tools to support our client’s training and
+                        operations.
+                      </p>
+                      <div className="col-link">
+                        <Link className="arrow-link" to="/">
+                          Learn More
+                          <i className="fa fa-chevron-circle-right" />
+                        </Link>
+                      </div>
+                    </div>
+                  </ScrollAnimation>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="who-section">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h2 class="font-weight-bold">Who We Are</h2>
+                  <ScrollAnimation animateIn="fadeIn">
+                    <p class="lead py-4">
+                      We provide technical assessment program development,
+                      independent testing, operational assessment support, and
+                      premier training in Adversary Tactics, Techniques, and
+                      Procedures.
+                    </p>
+                  </ScrollAnimation>
+                  <Link className="btn btn-primary" role="button" to="/">
+                    About Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-dark services">
             <div className="container">
-              <h2 className="font-weight-bold text-blue display-4">
-                How We Help
-              </h2>
-              <div className="row text-center justify-content-center mb-4">
-                <div className="col-md-6 col-lg-4 mb-3 props">
+              <h2 className="font-weight-bold text-white">How We Help</h2>
+              <div className="row text-center justify-content-center my-5">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
+                      {/*
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
@@ -278,8 +434,14 @@ class IndexPage extends React.Component {
                           </div>
                         </ScrollAnimation>
                         <div className="diamond-shadow" />
-                      </div>
-                      <h3 className="font-weight-bold">Red Teaming</h3>
+                      </div> */}
+                      <img
+                        src={RedTeaming}
+                        alt="Red Teaming"
+                        className="img-fluid"
+                        width="150px"
+                      />
+                      <h4 className="font-weight-bold py-3">Red Teaming</h4>
                       <p className="m-0">
                         Our most comprehensive security assessment, combining
                         penetration testing, application security testing, and
@@ -288,9 +450,10 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
+                      {/*
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
@@ -308,7 +471,16 @@ class IndexPage extends React.Component {
                         </ScrollAnimation>
                         <div className="diamond-shadow" />
                       </div>
-                      <h3 className="font-weight-bold">Penetration Testing</h3>
+                    */}
+                      <img
+                        src={PenetrationTesting}
+                        alt="Penetration Testing"
+                        className="img-fluid"
+                        width="150px"
+                      />
+                      <h4 className="font-weight-bold py-3">
+                        Penetration Testing
+                      </h4>
                       <p className="m-0">
                         Comprehensive risk, vulnerability, and penetration
                         testing intelligence with prioritized risk-rated
@@ -317,9 +489,10 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
+                      {/*
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
@@ -337,7 +510,16 @@ class IndexPage extends React.Component {
                         </ScrollAnimation>
                         <div className="diamond-shadow" />
                       </div>
-                      <h3 className="font-weight-bold">Application Testing</h3>
+                    */}
+                      <img
+                        src={ApplicationTesting}
+                        alt="Application Testing"
+                        className="img-fluid"
+                        width="150px"
+                      />
+                      <h4 className="font-weight-bold py-3">
+                        Application Testing
+                      </h4>
                       <p className="m-0">
                         Our security engineers will test vulnerabilities in your
                         custom or off the shelf applications
@@ -345,9 +527,10 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
+                      {/*
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
@@ -365,9 +548,16 @@ class IndexPage extends React.Component {
                         </ScrollAnimation>
                         <div className="diamond-shadow" />
                       </div>
-                      <h3 className="font-weight-bold">
+                    */}
+                      <img
+                        src={WebApplicationTesting}
+                        alt="Web Application Testing"
+                        className="img-fluid"
+                        width="150px"
+                      />
+                      <h4 className="font-weight-bold py-3">
                         Web Application Testing
-                      </h3>
+                      </h4>
                       <p className="m-0">
                         Our security engineers will test vulnerabilities in your
                         web, mobile, &amp; cloud applications
@@ -375,9 +565,10 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
+                      {/*
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
@@ -395,9 +586,16 @@ class IndexPage extends React.Component {
                         </ScrollAnimation>
                         <div className="diamond-shadow" />
                       </div>
-                      <h3 className="font-weight-bold">
+                    */}
+                      <img
+                        src={OpenSourceIntelligence}
+                        alt="Open Source Intelligence"
+                        className="img-fluid"
+                        width="150px"
+                      />
+                      <h4 className="font-weight-bold py-3">
                         Open Source Intelligence
-                      </h3>
+                      </h4>
                       <p className="m-0">
                         Open-source intelligence (OSINT) is intelligence
                         collected from publicly available sources
@@ -405,9 +603,10 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-6 col-lg-4 mb-3 props">
+                <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop">
+                      {/*
                       <div>
                         <ScrollAnimation
                           animateIn="flipInY"
@@ -425,7 +624,16 @@ class IndexPage extends React.Component {
                         </ScrollAnimation>
                         <div className="diamond-shadow" />
                       </div>
-                      <h3 className="font-weight-bold">Social Engineering</h3>
+                    */}
+                      <img
+                        src={SocialEngineering}
+                        alt="Social Engineering"
+                        className="img-fluid"
+                        width="150px"
+                      />
+                      <h4 className="font-weight-bold py-3">
+                        Social Engineering
+                      </h4>
                       <p className="m-0">
                         Phishing and phone campaigns to pinpoint your
                         vulnerabilities and promote awareness and education
@@ -434,7 +642,7 @@ class IndexPage extends React.Component {
                   </ScrollAnimation>
                 </div>
               </div>
-              <Link className="btn btn-primary mt-5" role="button" to="/">
+              <Link className="btn btn-primary" role="button" to="/">
                 Our Services
               </Link>
             </div>
@@ -448,9 +656,7 @@ class IndexPage extends React.Component {
               <div className="container-fluid">
                 <div className="row justify-content-center">
                   <div className="col-10">
-                    <h2 className="font-weight-bold display-4 text-blue">
-                      Our Partners
-                    </h2>
+                    <h2 className="font-weight-bold text-blue">Our Partners</h2>
                     <LazyLoadComponent>
                       <Swiper {...logos} className>
                         <div>
@@ -538,7 +744,7 @@ class IndexPage extends React.Component {
                 <div className="col-lg-7 d-flex flex-column bg-blue posts">
                   <div className="row">
                     <div className="col-12 col-md-8 text-center text-md-left align-self-center pb-md-4">
-                      <h3 className="font-weight-bold keep-all">
+                      <h3 className="font-weight-bold keep-all text-white">
                         From the Blog
                       </h3>
                     </div>
