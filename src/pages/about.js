@@ -28,11 +28,10 @@ class AboutPage extends React.Component {
                   delay="1000"
                   scrollableParentSelector=".page-headline"
                 >
-                  <h5 className="pt-3 font-weight-lighter">
-                    <span className="font-weight-bolder">Gray Tier</span> is an
-                    advanced security company that focuses on developing
-                    technical solutions to the toughest cyber security
-                    challenges facing our customers
+                  <h5 className="pt-3 font-weight-lighter text-white">
+                    Gray Tier is an advanced security company that focuses on
+                    developing technical solutions to the toughest cyber
+                    security challenges facing our customers
                   </h5>
                 </ScrollAnimation>
               </div>

@@ -79,9 +79,9 @@ p:last-child {
 .above-the-fold:before {
   content: '';
   position: absolute;
-  bottom: -100px;
+  bottom: -300px;
   width: 50%;
-  height: 190px;
+  height: 400px;
   background-color: #eafcff;
   z-index: auto;
 }
