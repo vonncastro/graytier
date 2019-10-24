@@ -292,12 +292,13 @@ class IndexPage extends React.Component {
                 delay="2000"
                 scrollableParentSelector=".above-the-fold"
               >
-                <button
-                  className="btn btn-primary btn-ripple mt-4"
-                  type="button"
+                <Link
+                  className="btn btn-primary btn-lg btn-ripple mt-4"
+                  role="button"
+                  to="/"
                 >
                   Get an Overview Today
-                </button>
+                </Link>
               </ScrollAnimation>
               <ScrollAnimation
                 animateIn="fadeInDown"
