@@ -11,11 +11,6 @@ import 'animate.css/animate.min.css'
 
 import HeroParticles from '../components/particles'
 import Overview from '../components/overview'
-import Hero from '../images/hero.png'
-import LogoImg from '../images/logo-img.png'
-import ThreatSimulation from '../images/threat-simulation.png'
-import Consulting from '../images/consulting.png'
-import SoftwareRD from '../images/software-r-d.png'
 
 import ATFimg from '../images/atf-img.png'
 import DownArrow from '../images/down-arrow.svg'
@@ -268,6 +263,7 @@ class IndexPage extends React.Component {
 
           <div className="above-the-fold">
             <img className="atf-img" src={ATFimg} alt="" />
+            <HeroParticles />
             <div className="container">
               <ScrollAnimation animateIn="fadeInDown" duration="2">
                 <h2 className="text-blue">Nosce Te Ipsum</h2>
@@ -656,7 +652,7 @@ class IndexPage extends React.Component {
               <div className="container-fluid">
                 <div className="row justify-content-center">
                   <div className="col-10">
-                    <h2 className="font-weight-bold text-blue">Our Partners</h2>
+                    <h2 className="font-weight-bold">Our Partners</h2>
                     <LazyLoadComponent>
                       <Swiper {...logos} className>
                         <div>

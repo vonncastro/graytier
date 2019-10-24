@@ -20,8 +20,7 @@ p:last-child {
 
 .above-the-fold {
   text-align: center;
-  background: url('../images/atf-lines.png') fixed no-repeat,
-    url('../images/diamonds-bg.svg') fixed no-repeat,
+  background: url('../images/diamonds-bg.svg') fixed no-repeat,
     linear-gradient(
       -38deg,
       rgb(32, 64, 123) 0%,
