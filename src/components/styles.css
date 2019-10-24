@@ -22,7 +22,10 @@ p:last-child {
   position: relative;
   overflow: hidden;
 }
-
+.blog-wrap img {
+  max-width: 100%;
+  height: auto;
+}
 .hero-img {
   max-width: auto;
   z-index: 2;

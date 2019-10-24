@@ -6,7 +6,6 @@ import { LazyLoadComponent } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import Swiper from 'react-id-swiper'
 import 'react-id-swiper/lib/styles/css/swiper.css'
-import BasePortableText from '@sanity/block-content-to-react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 
@@ -35,6 +34,7 @@ import USCustoms from '../images/us-customs.png'
 import JSP from '../images/jsp.png'
 import USCyberCommand from '../images/us-cyber-command.png'
 import NCCIC from '../images/nccic.png'
+import marked from 'marked'
 
 class IndexPage extends React.Component {
   render() {
@@ -566,7 +566,11 @@ class IndexPage extends React.Component {
                               {/*{node.publishedAt}*/} October 09, 2019
                             </span>
                             <div className="truncate-9 text-muted">
-                              <BasePortableText blocks={node._rawExcerpt} />
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: marked(node.excerpt),
+                                }}
+                              />
                             </div>
                             <Link
                               className="btn btn-primary btn-sm mt-4"
@@ -581,9 +585,7 @@ class IndexPage extends React.Component {
                           <div
                             className="blog-post-img h-100"
                             style={{
-                              backgroundImage: `url('${
-                                node.mainImage.asset.url
-                              }')`,
+                              backgroundImage: `url('https://picsum.photos/200/300/?blur=2')`,
                             }}
                           />
                         </div>
@@ -684,7 +686,7 @@ export const indexPageQuery = graphql`
           id
           title
           publishedAt
-          _rawExcerpt
+          excerpt
           slug {
             current
           }

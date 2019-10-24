@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
-import BasePortableText from '@sanity/block-content-to-react'
+import marked from 'marked'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -19,37 +19,39 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        {posts.map(({ node }) => {
-          const title = node.title
-          const serializers = {
-            types: {
-              authorReference: ({ node }) => (
-                <span>
-                  {node.author.firstname} {node.author.lastname}
-                </span>
-              ),
-            },
-          }
-          return (
-            <div key={node.slug.current}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.slug.current}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node._createdAt}</small>
-
-              <BasePortableText
-                blocks={node._rawExcerpt}
-                serializers={serializers}
-              />
-            </div>
-          )
-        })}
+        <div className="container py-5">
+          <div className="blog-wrap">
+            {posts.map(({ node }) => {
+              const title = node.title
+              // const serializers = {
+              //   types: {
+              //     authorReference: ({ node }) => (
+              //       <span>
+              //         {node.author.firstname} {node.author.lastname}
+              //       </span>
+              //     ),
+              //   },
+              // }
+              return (
+                <div key={node.slug.current} className="mb-4">
+                  <h3
+                    style={{
+                      marginBottom: rhythm(1 / 4),
+                    }}
+                  >
+                    <Link style={{ boxShadow: `none` }} to={node.slug.current}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.publishedAt}</small>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: marked(node.excerpt) }}
+                  />
+                </div>
+              )
+            })}
+          </div>
+        </div>
       </Layout>
     )
   }
@@ -64,34 +66,16 @@ export const pageQuery = graphql`
         title
       }
     }
-    allSanityPost(
-      filter: { status: { eq: "published" } }
-      sort: { fields: [author____createdAt], order: DESC }
-    ) {
+    allSanityPost(filter: { status: { eq: "published" } }) {
       edges {
         node {
           id
           title
-          _rawExcerpt
+          excerpt
           slug {
             current
           }
-          _createdAt
-          _updatedAt
-          author {
-            id
-            firstname
-            lastname
-            image {
-              asset {
-                id
-                url
-                fluid {
-                  src
-                }
-              }
-            }
-          }
+          publishedAt(formatString: "MMMM DD, YYYY")
         }
       }
     }

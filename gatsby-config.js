@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
-        projectId: process.env.SANITY_PROJECT_ID || 'puw6oew8',
+        projectId: process.env.SANITY_PROJECT_ID || '7qg6ezg7',
         dataset: process.env.SANITY_DATASET || 'production',
         token: process.env.SANITY_READ_TOKEN,
         watchMode: !isProd,
@@ -68,13 +68,11 @@ module.exports = {
             serialize: ({ query: { site, allSanityPost } }) => {
               return allSanityPost.edges.map(edge => {
                 return Object.assign({}, edge.node, {
-                  description: edge.node._rawExcerpt,
-                  date: edge.node._createdAt,
+                  description: edge.node.excerpt,
+                  date: edge.node.publishedAt,
                   url: site.siteMetadata.siteUrl + edge.node.slug.current,
                   guid: site.siteMetadata.siteUrl + edge.node.slug.current,
-                  custom_elements: [
-                    { 'content:encoded': edge.node._rawExcerpt },
-                  ],
+                  custom_elements: [{ 'content:encoded': edge.node.excerpt }],
                 })
               })
             },
@@ -88,8 +86,9 @@ module.exports = {
                     node {
                       id
                       title
-                      _rawExcerpt
+                      excerpt
                       _createdAt
+                      publishedAt
                       slug {
                         current
                       }
