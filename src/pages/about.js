@@ -21,7 +21,7 @@ class AboutPage extends React.Component {
             <div className="row justify-content-center">
               <div className="col-md-9">
                 <ScrollAnimation animateIn="fadeInDown" duration="2">
-                  <h1 className="display-4">About</h1>
+                  <h1 className="font-weight-bold">About</h1>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="fadeIn"
@@ -45,9 +45,7 @@ class AboutPage extends React.Component {
                 <div className="row pb-5 text-center">
                   <div className="col-md-6 py-2">
                     <ScrollAnimation animateIn="fadeInLeft" className="h-100">
-                      <h4 className="font-weight-bold text-uppercase text-blue">
-                        Our Mission
-                      </h4>
+                      <h4 className="font-weight-bold">Our Mission</h4>
                       <div className="h-100">
                         <p className="lead">
                           To prepare our customers to defend their systems
@@ -58,9 +56,7 @@ class AboutPage extends React.Component {
                   </div>
                   <div className="col-md-6 bordered-col-text py-2">
                     <ScrollAnimation animateIn="fadeInRight" className="h-100">
-                      <h4 className="font-weight-bold text-uppercase text-blue">
-                        Our Vision
-                      </h4>
+                      <h4 className="font-weight-bold">Our Vision</h4>
                       <div className="h-100">
                         <p className="lead">
                           To be the premier security services and solutions

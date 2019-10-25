@@ -2,13 +2,15 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import ScrollAnimation from 'react-animate-on-scroll'
+import 'animate.css/animate.min.css'
+import HeroParticles from '../components/particles'
 import marked from 'marked'
-import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const siteTitle = 'Blog'
     const posts = data.allSanityPost.edges
 
     console.log(this.props)
@@ -16,40 +18,85 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
+          title={siteTitle}
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <div className="container py-5">
-          <div className="blog-wrap">
-            {posts.map(({ node }) => {
-              const title = node.title
-              // const serializers = {
-              //   types: {
-              //     authorReference: ({ node }) => (
-              //       <span>
-              //         {node.author.firstname} {node.author.lastname}
-              //       </span>
-              //     ),
-              //   },
-              // }
-              return (
-                <div key={node.slug.current} className="mb-4">
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link style={{ boxShadow: `none` }} to={node.slug.current}>
-                      {title}
-                    </Link>
-                  </h3>
-                  <small>{node.publishedAt}</small>
+        <div className="page-headline">
+          <HeroParticles />
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-md-9">
+                <ScrollAnimation animateIn="fadeInDown" duration="2">
+                  <h1 className="font-weight-bold">Blog</h1>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="fadeIn" delay="1000">
+                  <h5 className="pt-3 font-weight-lighter text-white">
+                    All Posts
+                  </h5>
+                </ScrollAnimation>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="page-content pb-0">
+          <div className="container">
+            <div className="blog-wrap">
+              {posts.map(({ node }) => {
+                const title = node.title
+                // const serializers = {
+                //   types: {
+                //     authorReference: ({ node }) => (
+                //       <span>
+                //         {node.author.firstname} {node.author.lastname}
+                //       </span>
+                //     ),
+                //   },
+                // }
+                return (
                   <div
-                    dangerouslySetInnerHTML={{ __html: marked(node.excerpt) }}
-                  />
-                </div>
-              )
-            })}
+                    className="row flex-grow-1"
+                    style={{ paddingBottom: '100px' }}
+                  >
+                    <div className="col-lg-5 order-2 order-lg-1 pr-lg-0">
+                      <div className="blog post-item h-100">
+                        <Link
+                          className="m-0 post-link"
+                          to={node.slug.current}
+                          title="slug"
+                        >
+                          <h4 className="m-0">{title}</h4>
+                        </Link>
+                        <span className="small text-uppercase text-muted">
+                          {node.publishedAt}
+                        </span>
+                        <div className="truncate-9 text-muted">
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: marked(node.excerpt),
+                            }}
+                          />
+                        </div>
+                        <Link
+                          className="btn btn-primary btn-sm mt-4"
+                          role="button"
+                          to={node.slug.current}
+                        >
+                          Read More
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="col-lg-7 order-1 order-lg-2 pl-lg-0">
+                      <div
+                        className="blog-post-img h-100"
+                        style={{
+                          backgroundImage: `url('https://picsum.photos/200/300/?blur=2')`,
+                        }}
+                      />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       </Layout>

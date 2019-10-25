@@ -124,7 +124,7 @@ const Footer = () => (
               </span>
               <Form
                 form_name="newsletter"
-                form_id=""
+                form_id="5db168c2cc9b735a4d8c3f2f"
                 form_classname="newsletter"
                 action="/"
                 method="post"

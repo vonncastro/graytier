@@ -368,9 +368,7 @@ class IndexPage extends React.Component {
                         src={IconSoftware}
                         alt="icon"
                       />
-                      <h4 className="font-weight-bold py-3">
-                        Threat Simulation
-                      </h4>
+                      <h4 className="font-weight-bold py-3">Software R&D</h4>
                       <p>
                         We specialize in developing bespoke offensive and
                         defensive tools to support our client’s training and
@@ -766,7 +764,7 @@ class IndexPage extends React.Component {
                               <h4 className="m-0">{title}</h4>
                             </Link>
                             <span className="small text-uppercase text-muted">
-                              {/*{node.publishedAt}*/} October 09, 2019
+                              {node.publishedAt}
                             </span>
                             <div className="truncate-9 text-muted">
                               <div
@@ -888,7 +886,7 @@ export const indexPageQuery = graphql`
         node {
           id
           title
-          publishedAt
+          publishedAt(formatString: "MMMM DD, YYYY")
           excerpt
           slug {
             current
