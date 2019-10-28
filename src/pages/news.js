@@ -7,10 +7,10 @@ import 'animate.css/animate.min.css'
 import HeroParticles from '../components/particles'
 import marked from 'marked'
 
-class BlogIndex extends React.Component {
+class NewsIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = 'Blog'
+    const siteTitle = 'News'
     const posts = data.allSanityPost.edges
 
     console.log(this.props)
@@ -27,38 +27,35 @@ class BlogIndex extends React.Component {
             <div className="row justify-content-center">
               <div className="col-md-9">
                 <ScrollAnimation animateIn="fadeInDown" duration="2">
-                  <h1 className="font-weight-bold">Blog</h1>
+                  <h1 className="font-weight-bold">News</h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" delay="1000">
                   <h5 className="pt-3 font-weight-lighter text-white">
-                    All Posts
+                    Latest Stories
                   </h5>
                 </ScrollAnimation>
               </div>
             </div>
           </div>
         </div>
-        <div className="page-content pb-0">
+        <div className="page-content">
           <div className="container">
             <div className="blog-wrap">
-              {posts.map(({ node }) => {
-                const title = node.title
-                // const serializers = {
-                //   types: {
-                //     authorReference: ({ node }) => (
-                //       <span>
-                //         {node.author.firstname} {node.author.lastname}
-                //       </span>
-                //     ),
-                //   },
-                // }
-                return (
-                  <ScrollAnimation animateIn="fadeIn" className="h-100">
-                    <div
-                      className="row flex-grow-1"
-                      style={{ paddingBottom: '100px' }}
-                    >
-                      <div className="col-lg-5 order-2 order-lg-1 pr-lg-0">
+              <div className="row justify-content-center">
+                {posts.map(({ node }) => {
+                  const title = node.title
+                  // const serializers = {
+                  //   types: {
+                  //     authorReference: ({ node }) => (
+                  //       <span>
+                  //         {node.author.firstname} {node.author.lastname}
+                  //       </span>
+                  //     ),
+                  //   },
+                  // }
+                  return (
+                    <div className="col-lg-5 mb-4">
+                      <ScrollAnimation animateIn="fadeIn" className="h-100">
                         <div className="blog post-item h-100">
                           <Link
                             className="m-0 post-link"
@@ -78,26 +75,18 @@ class BlogIndex extends React.Component {
                             />
                           </div>
                           <Link
-                            className="btn btn-primary btn-sm mt-4"
+                            className="btn btn-primary btn-sm mt-4 btn-black-transparent"
                             role="button"
                             to={node.slug.current}
                           >
                             Read More
                           </Link>
                         </div>
-                      </div>
-                      <div className="col-lg-7 order-1 order-lg-2 pl-lg-0">
-                        <div
-                          className="blog-post-img h-100"
-                          style={{
-                            backgroundImage: `url('https://picsum.photos/200/300/?blur=2')`,
-                          }}
-                        />
-                      </div>
+                      </ScrollAnimation>
                     </div>
-                  </ScrollAnimation>
-                )
-              })}
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>
@@ -106,9 +95,9 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default NewsIndex
 
-export const pageQuery = graphql`
+export const newsPageQuery = graphql`
   query {
     site {
       siteMetadata {
