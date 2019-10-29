@@ -86,19 +86,19 @@ const Footer = () => (
               <h5 className="font-weight-bold text-white pb-3">Company</h5>
               <ul className="list-unstyled footer-links">
                 <li>
-                  <Link to="/">About</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/">Partners</Link>
+                  <Link to="/partners">Partners</Link>
                 </li>
                 <li>
-                  <Link to="/">Services</Link>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <Link to="/">Careers</Link>
+                  <Link to="/careers">Careers</Link>
                 </li>
                 <li>
-                  <Link to="/">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -108,10 +108,10 @@ const Footer = () => (
               <h5 className="font-weight-bold text-white pb-3">Resources</h5>
               <ul className="list-unstyled footer-links">
                 <li>
-                  <Link to="/">Blog</Link>
+                  <Link to="/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/">News</Link>
+                  <Link to="/news">News</Link>
                 </li>
               </ul>
             </div>
@@ -126,14 +126,14 @@ const Footer = () => (
                 form_name="newsletter"
                 form_id="5db168c2cc9b735a4d8c3f2f"
                 form_classname="newsletter"
-                action="/"
+                action="/subscribed"
                 method="post"
               >
                 <div className="form-group">
                   <input
                     className="form-control mb-0"
                     type="email"
-                    name="email_address"
+                    name="email"
                     required=""
                   />
                   <label>Enter your email address</label>

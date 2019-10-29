@@ -72,195 +72,6 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} description={siteDescription} />
         <div>
-          {/*
-        <div className="hero-section">
-            <HeroParticles />
-            <div className="container">
-              <img src={Hero} className="hero-img" alt="Gray Tier" />
-              <div className="row">
-                <div className="col-lg-8 text-center text-lg-left order-2 order-lg-1">
-                  <div className="hero-text">
-                    <ScrollAnimation animateIn="fadeInDown" duration="2">
-                      <h1 className="font-weight-bold display-2 text-uppercase hero-tagline">
-                        Nosce Te Ipsum
-                      </h1>
-                      <h2 className="text-blue">
-                        Know Yourself. Know Your Enemy.
-                      </h2>
-                    </ScrollAnimation>
-                    <ScrollAnimation
-                      animateIn="fadeIn"
-                      delay="1000"
-                      scrollableParentSelector=".hero-text"
-                    >
-                      <h5 className="font-weight-lighter py-5">
-                        Gray Tier is an advanced consulting company that focuses
-                        on, developing, technical solutions to the toughest
-                        cyber security challenges faced by both enterprise and
-                        government customers.
-                      </h5>
-                      <Link
-                        className="btn btn-primary btn-lg mr-md-3 mb-md-0 mb-3 btn-ripple"
-                        role="button"
-                        to="/"
-                      >
-                        Get an Overview Today
-                      </Link>
-                      <Link
-                        className="btn btn-secondary btn-lg btn-white"
-                        role="button"
-                        to="/"
-                      >
-                        Our Services
-                      </Link>
-                    </ScrollAnimation>
-                  </div>
-                </div>
-                <div className="col-lg-4 text-center order-lg-2 py-5 py-md-0" />
-              </div>
-            </div>
-          </div>
-          <div className="services">
-            <div className="container">
-              <div className="pb-3 text-white text-center">
-                <h2 className="font-weight-bold display-4">
-                  Protect Your Assets!
-                </h2>
-                <p className="lead">
-                  <em>
-                    If you know the enemy and know yourself you need not fear
-                    the results of a hundred battles. -Sun Tzu
-                  </em>
-                </p>
-              </div>
-              <div className="row text-center justify-content-center">
-                <div className="col-md-6 col-lg-4 mb-4 props">
-                  <ScrollAnimation animateIn="fadeIn" className="h-100">
-                    <div className="border rounded-0 shadow-lg val-prop">
-                      <div>
-                        <ScrollAnimation
-                          animateIn="flipInY"
-                          delay="500"
-                          className="diamond-div"
-                        >
-                          <div className="diamond mx-auto">
-                            <div className="diamond-content">
-                              <img
-                                src={ThreatSimulation}
-                                alt="Threat Simulation"
-                              />
-                            </div>
-                          </div>
-                        </ScrollAnimation>
-
-                        <div className="diamond-shadow" />
-                      </div>
-
-                      <h3 className="font-weight-bold">Threat Simulation</h3>
-                      <p className="m-0">
-                        Our operators can conduct a full range of InfoSec
-                        operations from network infiltration and intelligence
-                        gathering to implementing tailored effects
-                      </p>
-                    </div>
-                  </ScrollAnimation>
-                </div>
-                <div className="col-md-6 col-lg-4 mb-4 props">
-                  <ScrollAnimation animateIn="fadeIn" className="h-100">
-                    <div className="border rounded-0 shadow-lg val-prop">
-                      <div>
-                        <ScrollAnimation
-                          animateIn="flipInY"
-                          delay="500"
-                          className="diamond-div"
-                        >
-                          <div className="diamond mx-auto">
-                            <div className="diamond-content">
-                              <img src={Consulting} alt="Consulting" />
-                            </div>
-                          </div>
-                        </ScrollAnimation>
-                        <div className="diamond-shadow" />
-                      </div>
-                      <h3 className="font-weight-bold">Consulting</h3>
-                      <p className="m-0">
-                        Our consulting services are tailored to help our clients
-                        solve their toughest security challenges
-                      </p>
-                    </div>
-                  </ScrollAnimation>
-                </div>
-                <div className="col-md-6 col-lg-4 mb-4 props">
-                  <ScrollAnimation animateIn="fadeIn" className="h-100">
-                    <div className="border rounded-0 shadow-lg val-prop">
-                      <div>
-                        <ScrollAnimation
-                          animateIn="flipInY"
-                          delay="500"
-                          className="diamond-div"
-                        >
-                          <div className="diamond mx-auto">
-                            <div className="diamond-content">
-                              <img src={SoftwareRD} alt="Software R&D" />
-                            </div>
-                          </div>
-                        </ScrollAnimation>
-                        <div className="diamond-shadow" />
-                      </div>
-                      <h3 className="font-weight-bold">Software R&amp;D</h3>
-                      <p className="m-0">
-                        We specialize in developing bespoke offensive and
-                        defensive tools to support our client’s training and
-                        operations
-                      </p>
-                    </div>
-                  </ScrollAnimation>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="about-section">
-            <div className="container">
-              <div className="row align-items-center pb-5">
-                <div className="col-md-6 mb-3 py-5">
-                  <ScrollAnimation animateIn="fadeInLeft" className="h-100">
-                    <img height="75px" src={LogoImg} alt="Gray Tier" />
-                    <h2 className="display-3 font-weight-bold pb-3">
-                      Who We Are
-                    </h2>
-                    <Link className="btn btn-primary" role="button" to="/about">
-                      About Us
-                    </Link>
-                  </ScrollAnimation>
-                </div>
-                <div className="col-md-6 bordered-col-text">
-                  <ScrollAnimation animateIn="fadeInRight" className="h-100">
-                    <h4 className="font-weight-bold text-uppercase text-blue">
-                      Our Mission
-                    </h4>
-                    <div className="h-100">
-                      <p className="lead">
-                        To prepare our customers to defend their systems against
-                        global cyber threats.
-                      </p>
-                    </div>
-                    <h4 className="font-weight-bold text-uppercase text-blue mt-5">
-                      Our Vision
-                    </h4>
-                    <div className="h-100">
-                      <p className="lead">
-                        To be the premier security services and solutions
-                        provider for our enterprise, government, and military
-                        customers.
-                      </p>
-                    </div>
-                  </ScrollAnimation>
-                </div>
-              </div>
-            </div>
-          </div>
-        */}
-
           <div className="above-the-fold">
             <img className="atf-img" src={ATFimg} alt="" />
             <HeroParticles />
@@ -295,7 +106,7 @@ class IndexPage extends React.Component {
                 <Link
                   className="btn btn-primary btn-lg btn-ripple mt-4"
                   role="button"
-                  to="/"
+                  to="/contact"
                 >
                   Get an Overview Today
                 </Link>
@@ -400,7 +211,7 @@ class IndexPage extends React.Component {
                       Procedures.
                     </p>
                   </ScrollAnimation>
-                  <Link className="btn btn-primary" role="button" to="/">
+                  <Link className="btn btn-primary" role="button" to="/about">
                     About Us
                   </Link>
                 </div>
@@ -637,7 +448,7 @@ class IndexPage extends React.Component {
                   </ScrollAnimation>
                 </div>
               </div>
-              <Link className="btn btn-primary" role="button" to="/">
+              <Link className="btn btn-primary" role="button" to="/services">
                 Our Services
               </Link>
             </div>
@@ -744,8 +555,8 @@ class IndexPage extends React.Component {
                       </h3>
                     </div>
                     <div className="col-md-4 text-center text-md-right align-self-center pb-4">
-                      <Link className="text-white arrow-link" to="/">
-                        More Posts&nbsp;
+                      <Link className="text-white arrow-link pr-0" to="/blog">
+                        All Posts&nbsp;
                         <i className="fa fa-long-arrow-right" />
                       </Link>
                     </div>
@@ -800,8 +611,8 @@ class IndexPage extends React.Component {
                       <h3 className="font-weight-bold keep-all">Newsroom</h3>
                     </div>
                     <div className="col-md-7 text-center text-md-right align-self-center pb-4">
-                      <Link className="arrow-link" to="/">
-                        Latest News&nbsp;
+                      <Link className="arrow-link pr-0" to="/news">
+                        Latest Stories&nbsp;
                         <i className="fa fa-long-arrow-right" />
                       </Link>
                     </div>

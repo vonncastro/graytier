@@ -4,18 +4,18 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
-class NotFoundPage extends React.Component {
+class SubscribedPage extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="404: Not Found" />
+        <SEO title="Thank you!" />
         <div className="page-content">
           <div className="container text-center">
-            <h1 className="text-blue">Not Found</h1>
-            <p>Sorry, this page does not exist.</p>
+            <h1 className="text-blue">Subscribed!</h1>
+            <p>You are now subscribed to our newsletter</p>
             <Link className="btn btn-primary" role="button" to="/">
               Back to Home
             </Link>
@@ -26,9 +26,9 @@ class NotFoundPage extends React.Component {
   }
 }
 
-export default NotFoundPage
+export default SubscribedPage
 
-export const pageQuery = graphql`
+export const subscribedPageQuery = graphql`
   query {
     site {
       siteMetadata {

@@ -20,7 +20,7 @@ class GetAnOverview extends React.Component {
             <Link
               className="btn btn-primary btn-lg btn-ripple"
               role="button"
-              to="/"
+              to="/contact"
             >
               Get an Overview Today
             </Link>

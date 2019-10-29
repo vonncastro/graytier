@@ -16,22 +16,22 @@ export default () => (
           <Collapsible trigger="Company">
             <ul className="submenu">
               <li>
-                <Link to="/">About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/">Partners</Link>
+                <Link to="/partners">Partners</Link>
               </li>
               <li>
-                <Link to="/">Services</Link>
+                <Link to="/services">Services</Link>
               </li>
               <li>
-                <Collapsible trigger="Careers">
+                <Collapsible trigger={<Link to="/careers">Careers</Link>}>
                   <ul className="submenu">
                     <li>
-                      <Link to="/">Current Openings</Link>
+                      <Link to="/careers/job-postings">Current Openings</Link>
                     </li>
                     <li>
-                      <Link to="/">Benefits</Link>
+                      <Link to="/careers/benefits">Benefits</Link>
                     </li>
                   </ul>
                 </Collapsible>
@@ -43,22 +43,22 @@ export default () => (
           <Collapsible trigger="Resources">
             <ul className="submenu">
               <li>
-                <Link to="/">Blog</Link>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <Link to="/">News</Link>
+                <Link to="/news">News</Link>
               </li>
             </ul>
           </Collapsible>
         </li>
         <li>
-          <Link to="/">Contact Us</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
       <div className="d-block d-md-none pt-4 text-center">
-        <a className="btn btn-primary px-3" role="button" href="/">
+        <Link className="btn btn-primary px-3" role="button" to="/contact">
           Get an Overview Today
-        </a>
+        </Link>
       </div>
       <div className="d-block text-center pt-3">
         <a

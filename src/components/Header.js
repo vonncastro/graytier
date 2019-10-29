@@ -27,9 +27,9 @@ const Header = () => (
             </div>
             <div className="col-md-7 text-right d-none d-md-inline-block">
               <div className="header-cta">
-                <a className="btn btn-primary" role="button" href="/">
+                <Link className="btn btn-primary" role="button" to="/contact">
                   Get an Overview Today
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-3 col-md-1 text-right">
