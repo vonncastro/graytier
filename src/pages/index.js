@@ -15,9 +15,9 @@ import Overview from '../components/overview'
 import ATFimg from '../images/atf-img.png'
 import DownArrow from '../images/down-arrow.svg'
 
-import IconConsulting from '../images/icon-consulting.svg'
-import IconSoftware from '../images/icon-software.svg'
-import IconThreat from '../images/icon-threat.svg'
+import ThreatSimulation from '../images/threat-simulation.png'
+import Consulting from '../images/consulting.png'
+import SoftwareRD from '../images/software-r-d.png'
 
 import RedTeaming from '../images/red-teaming.png'
 import PenetrationTesting from '../images/penetration-testing.png'
@@ -125,17 +125,22 @@ class IndexPage extends React.Component {
             </div>
           </div>
 
-          <div className="below-atf" id="solutions">
+          <div className="below-atf text-center" id="solutions">
             <div className="container">
               <div className="row justify-content-center">
-                <div className="col-md-4 mb-3">
-                  <ScrollAnimation animateIn="fadeInLeft" className="h-100">
-                    <div className="shadow-lg bg-white h-100 text-center col-with-link">
-                      <img className="img-fluid" src={IconThreat} alt="icon" />
+                <div className="col-md-6 col-lg-4 mb-4 props">
+                  <ScrollAnimation animateIn="fadeIn" className="h-100">
+                    <div className="border rounded-0 shadow-lg val-prop col-with-link">
+                      <img
+                        src={ThreatSimulation}
+                        alt="Threat Simulation"
+                        className="img-fluid"
+                        width="150px"
+                      />
                       <h4 className="font-weight-bold py-3">
                         Threat Simulation
                       </h4>
-                      <p>
+                      <p className="m-0">
                         Our operators can conduct a full range of InfoSec
                         operations from network infiltration and intelligence
                         gathering to implementing tailored effects.
@@ -149,16 +154,17 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-4 mb-3">
-                  <ScrollAnimation animateIn="fadeInUp" className="h-100">
-                    <div className="shadow-lg bg-white h-100 text-center col-with-link">
+                <div className="col-md-6 col-lg-4 mb-4 props">
+                  <ScrollAnimation animateIn="fadeIn" className="h-100">
+                    <div className="border rounded-0 shadow-lg val-prop col-with-link">
                       <img
+                        src={Consulting}
+                        alt="Consulting"
                         className="img-fluid"
-                        src={IconConsulting}
-                        alt="icon"
+                        width="150px"
                       />
                       <h4 className="font-weight-bold py-3">Consulting</h4>
-                      <p>
+                      <p className="m-0">
                         Our consulting services are tailored to help our clients
                         solve their toughest security challenges.
                       </p>
@@ -171,16 +177,17 @@ class IndexPage extends React.Component {
                     </div>
                   </ScrollAnimation>
                 </div>
-                <div className="col-md-4 mb-3">
-                  <ScrollAnimation animateIn="fadeInRight" className="h-100">
-                    <div className="shadow-lg bg-white h-100 text-center col-with-link">
+                <div className="col-md-6 col-lg-4 mb-4 props">
+                  <ScrollAnimation animateIn="fadeIn" className="h-100">
+                    <div className="border rounded-0 shadow-lg val-prop col-with-link">
                       <img
+                        src={SoftwareRD}
+                        alt="Software R&D"
                         className="img-fluid"
-                        src={IconSoftware}
-                        alt="icon"
+                        width="150px"
                       />
                       <h4 className="font-weight-bold py-3">Software R&D</h4>
-                      <p>
+                      <p className="m-0">
                         We specialize in developing bespoke offensive and
                         defensive tools to support our client’s training and
                         operations.
@@ -198,7 +205,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
 
-          <div className="who-section">
+          <div className="who-section bg-light">
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-8">

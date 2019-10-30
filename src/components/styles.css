@@ -51,7 +51,7 @@ p:last-child {
 
 .col-with-link {
   position: relative;
-  padding: 50px 50px 70px 50px;
+  padding: 50px 50px 90px 50px !important;
 }
 
 .col-link {
@@ -72,7 +72,7 @@ p:last-child {
 .below-atf {
   margin-top: -375px;
   padding-top: 100px;
-  background: #eafcff;
+  background: #f9fafb;
 }
 
 .above-the-fold:after,
@@ -82,7 +82,7 @@ p:last-child {
   bottom: -300px;
   width: 50%;
   height: 400px;
-  background-color: #eafcff;
+  background-color: #f9fafb;
   z-index: auto;
 }
 
@@ -100,7 +100,6 @@ p:last-child {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  background: #eafcff;
 }
 
 .blog-wrap img {
@@ -249,7 +248,7 @@ li.address:before {
 }
 
 .bg-light {
-  background: #eafcff !important;
+  background: #f9fafb !important;
 }
 
 .diamond-div {
@@ -380,6 +379,10 @@ a:hover {
   color: #3ba6de;
   opacity: 0.65;
   transition: all 0.35s ease;
+}
+
+a.btn {
+  opacity: 1;
 }
 
 .btn-lg {
