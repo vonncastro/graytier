@@ -521,7 +521,7 @@ textarea.form-control:focus:not([readonly]),
 .form-group label {
   opacity: 0.85;
   position: absolute;
-  top: 28%;
+  top: 14px;
   left: 9px;
   padding: 0 7px;
   right: 0;

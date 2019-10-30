@@ -36,7 +36,11 @@ class ContactPage extends React.Component {
           <div className="container text-center">
             <div className="row justify-content-between contacts">
               <div className="col-md-3 mb-5 mb-md-0">
-                <ScrollAnimation animateIn="fadeInDown" delay="0">
+                <ScrollAnimation
+                  animateIn="fadeInDown"
+                  delay="0"
+                  scrollableParentSelector=".contacts"
+                >
                   <i className="fa fa-map-marker" />
                   <h6 className="text-uppercase">Office</h6>
                   <p className="lead">
@@ -49,7 +53,11 @@ class ContactPage extends React.Component {
                 </ScrollAnimation>
               </div>
               <div className="col-md-3 mb-5 mb-md-0">
-                <ScrollAnimation animateIn="fadeInDown" delay="250">
+                <ScrollAnimation
+                  animateIn="fadeInDown"
+                  delay="250"
+                  scrollableParentSelector=".contacts"
+                >
                   <i className="fa fa-envelope-o" />
                   <h6 className="text-uppercase">Email Address</h6>
                   <p className="lead">
@@ -58,7 +66,11 @@ class ContactPage extends React.Component {
                 </ScrollAnimation>
               </div>
               <div className="col-md-3 mb-5 mb-md-0">
-                <ScrollAnimation animateIn="fadeInDown" delay="500">
+                <ScrollAnimation
+                  animateIn="fadeInDown"
+                  delay="500"
+                  scrollableParentSelector=".contacts"
+                >
                   <i className="fa fa-phone" />
                   <h6 className="text-uppercase">Phone</h6>
                   <p className="lead">
@@ -66,7 +78,11 @@ class ContactPage extends React.Component {
                   </p>
                 </ScrollAnimation>
               </div>
-              <div className="col-md-3 mb-5 mb-md-0" delay="750">
+              <div
+                className="col-md-3 mb-5 mb-md-0"
+                delay="750"
+                scrollableParentSelector=".contacts"
+              >
                 <ScrollAnimation animateIn="fadeInDown">
                   <i class="fa fa-fax" />
                   <h6 className="text-uppercase">Fax</h6>

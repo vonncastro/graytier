@@ -129,7 +129,7 @@ class IndexPage extends React.Component {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-md-6 col-lg-4 mb-4 props">
-                  <ScrollAnimation animateIn="fadeIn" className="h-100">
+                  <ScrollAnimation animateIn="fadeInLeft" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop col-with-link">
                       <img
                         src={ThreatSimulation}
@@ -155,7 +155,7 @@ class IndexPage extends React.Component {
                   </ScrollAnimation>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4 props">
-                  <ScrollAnimation animateIn="fadeIn" className="h-100">
+                  <ScrollAnimation animateIn="fadeInUp" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop col-with-link">
                       <img
                         src={Consulting}
@@ -178,7 +178,7 @@ class IndexPage extends React.Component {
                   </ScrollAnimation>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4 props">
-                  <ScrollAnimation animateIn="fadeIn" className="h-100">
+                  <ScrollAnimation animateIn="fadeInRight" className="h-100">
                     <div className="border rounded-0 shadow-lg val-prop col-with-link">
                       <img
                         src={SoftwareRD}
