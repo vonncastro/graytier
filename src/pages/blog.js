@@ -115,7 +115,12 @@ export const pageQuery = graphql`
         title
       }
     }
-    allSanityPost(filter: { status: { eq: "published" } }) {
+    allSanityPost(
+      filter: {
+        categories: { elemMatch: { title: { eq: "blog" } } }
+        status: { eq: "published" }
+      }
+    ) {
       edges {
         node {
           id

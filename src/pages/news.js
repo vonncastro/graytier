@@ -104,7 +104,12 @@ export const newsPageQuery = graphql`
         title
       }
     }
-    allSanityPost(filter: { status: { eq: "published" } }) {
+    allSanityPost(
+      filter: {
+        categories: { elemMatch: { title: { eq: "news" } } }
+        status: { eq: "published" }
+      }
+    ) {
       edges {
         node {
           id
