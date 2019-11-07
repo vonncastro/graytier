@@ -107,6 +107,10 @@ p:last-child {
   height: auto;
 }
 
+.text-dark-blue {
+  color:#0d4871 !important;
+}
+
 /*  manage display headers for mobile devices  */
 
 @media (max-width: 575.98px) {

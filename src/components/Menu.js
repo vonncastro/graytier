@@ -48,6 +48,12 @@ export default () => (
               <li>
                 <Link to="/news">News</Link>
               </li>
+               <li>
+                <Link to="/data-sheets">Data Sheets</Link>
+              </li>
+               <li>
+                <Link to="/white-papers">White Papers</Link>
+              </li>
             </ul>
           </Collapsible>
         </li>

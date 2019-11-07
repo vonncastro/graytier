@@ -2,10 +2,9 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
-import { LazyLoadComponent } from 'react-lazy-load-image-component'
-import 'react-lazy-load-image-component/src/effects/blur.css'
-import Swiper from 'react-id-swiper'
-import 'react-id-swiper/lib/styles/css/swiper.css'
+
+// import Swiper from 'react-id-swiper'
+// import 'react-id-swiper/lib/styles/css/swiper.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 
@@ -26,16 +25,16 @@ import WebApplicationTesting from '../images/web-application-testing.png'
 import OpenSourceIntelligence from '../images/open-source-intelligence.png'
 import SocialEngineering from '../images/social-engineering.png'
 
-import BunkerLabs from '../images/bunker-labs.png'
-import CACI from '../images/cacilogo-136x75.png'
-import Jacobs from '../images/jlogo-239x37.png'
-import HomelandSecurity from '../images/homeland-security.png'
-import Leidos from '../images/leidos.png'
-import Perspecta from '../images/perspecta.png'
-import USCustoms from '../images/us-customs.png'
-import JSP from '../images/jsp.png'
-import USCyberCommand from '../images/us-cyber-command.png'
-import NCCIC from '../images/nccic.png'
+// import BunkerLabs from '../images/bunker-labs.png'
+// import CACI from '../images/cacilogo-136x75.png'
+// import Jacobs from '../images/jlogo-239x37.png'
+// import HomelandSecurity from '../images/homeland-security.png'
+// import Leidos from '../images/leidos.png'
+// import Perspecta from '../images/perspecta.png'
+// import USCustoms from '../images/us-customs.png'
+// import JSP from '../images/jsp.png'
+// import USCyberCommand from '../images/us-cyber-command.png'
+// import NCCIC from '../images/nccic.png'
 import marked from 'marked'
 
 class IndexPage extends React.Component {
@@ -45,28 +44,28 @@ class IndexPage extends React.Component {
     const { data } = this.props
     const posts = data.allSanityPost.edges
 
-    const logos = {
-      slidesPerView: 4,
-      spaceBetween: 0,
-      speed: 500,
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '#logo-next',
-        prevEl: '#logo-prev',
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 3,
-        },
-        640: {
-          slidesPerView: 1,
-        },
-      },
-    }
+    // const logos = {
+    //   slidesPerView: 4,
+    //   spaceBetween: 0,
+    //   speed: 500,
+    //   loop: true,
+    //   autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
+    //   navigation: {
+    //     nextEl: '#logo-next',
+    //     prevEl: '#logo-prev',
+    //   },
+    //   breakpoints: {
+    //     768: {
+    //       slidesPerView: 3,
+    //     },
+    //     640: {
+    //       slidesPerView: 1,
+    //     },
+    //   },
+    // }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -209,7 +208,7 @@ class IndexPage extends React.Component {
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-8">
-                  <h2 class="font-weight-bold">Who We Are</h2>
+                  <h2 class="font-weight-bold"><Link className="text-dark-blue" to="/who-we-are">Who We Are</Link></h2>
                   <ScrollAnimation animateIn="fadeIn">
                     <p class="lead py-4">
                       We provide technical assessment program development,
@@ -218,8 +217,8 @@ class IndexPage extends React.Component {
                       Procedures.
                     </p>
                   </ScrollAnimation>
-                  <Link className="btn btn-primary" role="button" to="/about">
-                    About Us
+                  <Link className="btn btn-primary" role="button" to="/who-we-are">
+                    Read More
                   </Link>
                 </div>
               </div>
@@ -228,7 +227,7 @@ class IndexPage extends React.Component {
 
           <div className="bg-dark services">
             <div className="container">
-              <h2 className="font-weight-bold text-white">How We Help</h2>
+              <h2 className="font-weight-bold"><Link className="text-white" to="/services">How We Help</Link></h2>
               <div className="row text-center justify-content-center my-5">
                 <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
@@ -460,95 +459,7 @@ class IndexPage extends React.Component {
               </Link>
             </div>
           </div>
-          <div className="partners-section">
-            <ScrollAnimation animateIn="fadeIn">
-              <div className="partners-navs">
-                <i id="logo-prev" className="fa fa-angle-left review-nav" />
-                <i id="logo-next" className="fa fa-angle-right review-nav" />
-              </div>
-              <div className="container-fluid">
-                <div className="row justify-content-center">
-                  <div className="col-10">
-                    <h2 className="font-weight-bold">Our Partners</h2>
-                    <LazyLoadComponent>
-                      <Swiper {...logos} className>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={BunkerLabs}
-                            alt="Bunker Labs"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={CACI}
-                            alt="CACI"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={Jacobs}
-                            alt="Jacobs"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={Leidos}
-                            alt="Leidos"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={Perspecta}
-                            alt="Perspecta"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={USCustoms}
-                            alt="US Customs and Border Protection"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={JSP}
-                            alt="Joint Service Provider"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={USCyberCommand}
-                            alt="US Cyber Command"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={NCCIC}
-                            alt="NCCIC"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            className="img-fluid partner-logo"
-                            src={HomelandSecurity}
-                            alt="US Department of Homeland Security"
-                          />
-                        </div>
-                      </Swiper>
-                    </LazyLoadComponent>
-                  </div>
-                </div>
-              </div>
-            </ScrollAnimation>
-          </div>
+          
           <Overview />
 
           <div className="resources">
