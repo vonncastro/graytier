@@ -59,7 +59,7 @@ class whoWeArePage extends React.Component {
                         <ScrollAnimation animateIn="fadeInDown">
                           <div className="content text-center">
                             <h4>Penetration Testing & Assessments</h4>
-                            <p className="lead">Pinpoint Attack Patterns to Protect Your Critical Assets</p>
+                            <p className="lead">Comprehensive risk, vulnerability, and penetration testing intelligence with prioritized risk-rated recommendations</p>
                           </div>
                         </ScrollAnimation>
                       </div>
