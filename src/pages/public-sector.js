@@ -90,8 +90,8 @@ class PublicSectorPage extends React.Component {
               
 <p>Developing a program, reviewing its effectiveness, and testing program resilience will help ensure your organization has met its compliance obligations.</p>
 <p>Our assessments review your current cyber and IT risks, policies, and programs. With this comprehensive analysis, we can identify your program’s strengths and weaknesses to find any security gaps. We can also advise your organization on the optimal solutions for your business based on your unique risks and resource constraints.</p>
-<p>Once developed, you need to test the effectiveness of your program in simulated real-world scenarios. Delta Risk offers red-team and table-top exercises tailored to your specific requirements, and developed with our expertise in defending government networks.</p>
-<p>As insider threats (i.e., malicious or negligent employees) can also be a major concern for public sector entities, we deliver services directed at managing the human element of security. Delta Risk offers cyber security training and awareness courses for all levels of digital expertise.</p>
+<p>Once developed, you need to test the effectiveness of your program in simulated real-world scenarios. Gray Tier offers red-team and table-top exercises tailored to your specific requirements, and developed with our expertise in defending government networks.</p>
+<p>As insider threats (i.e., malicious or negligent employees) can also be a major concern for public sector entities, we deliver services directed at managing the human element of security. Gray Tier offers cyber security training and awareness courses for all levels of digital expertise.</p>
               </div>              
            </ScrollAnimation>
           </div>
@@ -134,7 +134,7 @@ class PublicSectorPage extends React.Component {
               <h2 className="font-weight-bold mb-3">Access Services Built Around Your Security Needs</h2>
               <h4>SOC-as-a-Services</h4>
               <div className="h-100 mt-4">
-              <p>Delta Risk’s managed security services efficiently and effectively manage your technical security needs. Our services are scalable to the size, complexity, and risk tolerance of your organization.</p>  
+              <p>Gray Tier’s managed security services efficiently and effectively manage your technical security needs. Our services are scalable to the size, complexity, and risk tolerance of your organization.</p>  
               </div>              
            </ScrollAnimation>
           </div>
@@ -148,7 +148,7 @@ class PublicSectorPage extends React.Component {
               </div>
               
               <div className="h-100 mt-4">
-              <p>If your organization suffers a breach, or you suspect one has already occurred, Delta Risk offers a variety of services to help you respond, including:</p>
+              <p>If your organization suffers a breach, or you suspect one has already occurred, Gray Tier offers a variety of services to help you respond, including:</p>
                 <div className="row">
                   <div className="col-md-6">
                     <img src="https://deltarisk.com/wp-content/uploads/2018/06/computer_working.jpg" alt=""/>
