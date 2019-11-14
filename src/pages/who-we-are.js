@@ -37,62 +37,46 @@ class whoWeArePage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="page-content">
+        <div className="page-content bg-light">
           <div className="container">
             <div className="row mb-5">
-              <div className="col-12 text-center">
+              <div className="col-md-6 text-center mb-4">
                  <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <h2 className="font-weight-bold mb-3">Penetration Testing & Assessments</h2>
                   <div className="h-100">
-                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                 </ScrollAnimation>
               </div>
-             
-            </div>
-          </div>
-        </div>
-        <div className="page-content bg-light">
-          <div className="container">
-            <div className="row mb-5">
-              <div className="col-12 text-center">
+
+              <div className="col-md-6 text-center mb-4">
                  <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <h2 className="font-weight-bold mb-3">Incident Response Services</h2>
                   <div className="h-100">
-                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                 </ScrollAnimation>
               </div>
-             
-            </div>
-          </div>
-        </div>
-        <div className="page-content">
-          <div className="container">
-            <div className="row mb-5">
-              <div className="col-12 text-center">
+
+              <div className="col-md-6 text-center mb-4">
                  <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <h2 className="font-weight-bold mb-3">SEIM</h2>
                   <div className="h-100">
-                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                 </ScrollAnimation>
               </div>
-             
-            </div>
-          </div>
-        </div>
-        <div className="page-content bg-light">
-          <div className="container">
-            <div className="row mb-5">
-              <div className="col-12 text-center">
+
+              <div className="col-md-6 text-center mb-4">
                  <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <h2 className="font-weight-bold mb-3">Cyber Threat Hunting</h2>
                   <div className="h-100">
-                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                 </ScrollAnimation>
               </div>
+
+
              
             </div>
           </div>
@@ -104,7 +88,7 @@ class whoWeArePage extends React.Component {
                  <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <h2 className="font-weight-bold mb-3">Compliance & Strategies</h2>
                   <div className="h-100">
-                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                 </ScrollAnimation>
               </div>
@@ -112,6 +96,9 @@ class whoWeArePage extends React.Component {
             </div>
           </div>
         </div>
+      
+
+
         <div className="page-content bg-light">
           <div className="container">
             <div className="row mb-5">
