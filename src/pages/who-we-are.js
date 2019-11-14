@@ -6,6 +6,9 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 import HeroParticles from '../components/particles'
 import Overview from '../components/overview'
+import Financial from '../images/001-hand.png'
+import Hospitality from '../images/002-kindness.png'
+import Federal from '../images/003-government.png'
 
 class whoWeArePage extends React.Component {
   render() {
@@ -119,23 +122,33 @@ class whoWeArePage extends React.Component {
                     <div className="row">
                       <div className="col-md-4">
                         <ScrollAnimation animateIn="fadeInUp">
-                          <h4 className="mb-3">Financial Services</h4>
-                          <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div className="border rounded-0 shadow-lg val-prop">
+                          <img className="img-fluid" src={Financial} width={150} alt="Financial Services"/>
+                          <h4 className="my-3">Financial Services</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           <Link className="btn btn-primary" role="button" to="/">Read More</Link>
+                          </div>                          
                         </ScrollAnimation>
                       </div>
                       <div className="col-md-4">
                         <ScrollAnimation animateIn="fadeInUp">
-                          <h4 className="mb-3">Service & Hospitality</h4>
-                          <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div className="border rounded-0 shadow-lg val-prop">
+                        <img className="img-fluid" src={Hospitality} width={150} alt="Service & Hospitality"/>
+                          <h4 className="my-3">Service & Hospitality</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           <Link className="btn btn-primary" role="button" to="/">Read More</Link>
+                          </div>   
+                          
                         </ScrollAnimation>
                       </div>
                       <div className="col-md-4">
                         <ScrollAnimation animateIn="fadeInUp">
-                          <h4 className="mb-3">Federal</h4>
-                          <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <div className="border rounded-0 shadow-lg val-prop">
+                          <img className="img-fluid" src={Federal} width={150} alt="Federal"/>
+                          <h4 className="my-3">Federal</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           <Link className="btn btn-primary" role="button" to="/public-sector">Read More</Link>
+                          </div>  
                         </ScrollAnimation>
                       </div>
                     </div>
