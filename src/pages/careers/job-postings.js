@@ -4,7 +4,9 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/seo'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
+import { LazyLoadComponent } from 'react-lazy-load-image-component'
 import HeroParticles from '../../components/particles'
+import BreezyHR from '../../components/careers/breezyHR'
 
 class JobPostings extends React.Component {
   render() {
@@ -26,10 +28,14 @@ class JobPostings extends React.Component {
             </div>
           </div>
         </div>
-        <div className="page-content ">
+        <div className="page-content loading">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8">
+                <LazyLoadComponent>
+                  <BreezyHR />
+                </LazyLoadComponent>
+                {/*
                 <ScrollAnimation animateIn="fadeIn">
                   <iframe
                     src="https://www.indeedjobs.com/widget/s/9c1faa3cf95dddfe9e71?autoWidth=true&embeddedURL=https%3A%2F%2Fwww.graytier.com%2Fcareers%2Fjob-postings%2F&height=620&heightRaw=620&theme=light&width=750&widthRaw"
@@ -44,6 +50,7 @@ class JobPostings extends React.Component {
                     }}
                   />
                 </ScrollAnimation>
+                */}
               </div>
             </div>
           </div>
