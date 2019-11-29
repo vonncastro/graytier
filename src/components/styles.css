@@ -958,3 +958,7 @@ ul.blog-nav li {
     padding: 100px;
   }
 }
+
+.imgstr img {
+  width: 50%;
+}

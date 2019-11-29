@@ -41,43 +41,125 @@ class whoWeArePage extends React.Component {
           <div className="container">
             <div className="row mb-5">
               <div className="col-md-6 text-center mb-4">
-                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
-                  <h2 className="font-weight-bold mb-3">Penetration Testing & Assessments</h2>
+                <ScrollAnimation animateIn="fadeInDown" className="h-100">
+                  <div className="img-fluid">
+                    <img src="/penetration-test.jpg" alt="" />
+                  </div>
+                  <h2 className="font-weight-bold mb-3">
+                    Penetration Testing & Assessments
+                  </h2>
                   <div className="h-100">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                      Penetration testing, also known as pentesting or pen
+                      testing, is one of the best ways to assess the strengths
+                      and weaknesses of your security perimeter and related
+                      controls, policies, and procedures. In these tests,
+                      sometimes referred to as “ethical hacking,” information
+                      security experts simulate the thought processes and
+                      actions of attackers. Leveraging technical knowledge, as
+                      well as publicly available or well-known information (such
+                      as default passwords), these experts are often able to
+                      crack systems and networks – revealing important
+                      vulnerabilities.
+                    </p>
                   </div>
                 </ScrollAnimation>
               </div>
 
               <div className="col-md-6 text-center mb-4">
-                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
-                  <h2 className="font-weight-bold mb-3">Incident Response Services</h2>
+                <ScrollAnimation animateIn="fadeInDown" className="h-100">
+                  <div className="img-fluid">
+                    <img src="/IR.jpg" alt="" />
+                  </div>
+                  <h2 className="font-weight-bold mb-3">
+                    Incident Response <br />
+                    Services
+                  </h2>
                   <div className="h-100">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                      Whether you want to minimize the cost and damages that
+                      result from an incident, or you’re concerned that you’ve
+                      been breached and don’t know it, Gray Tier's incident
+                      responders and threat hunters are ready to help. Our
+                      proven, methodical, and evidence-driven approach will keep
+                      you in control of whatever chaos an incident may bring.
+                    </p>
                   </div>
                 </ScrollAnimation>
               </div>
 
               <div className="col-md-6 text-center mb-4">
-                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
+                <ScrollAnimation animateIn="fadeInDown" className="h-100">
+                  <div className="img-fluid">
+                    <img src="/networksec.jpg" alt="" />
+                  </div>
                   <h2 className="font-weight-bold mb-3">SEIM</h2>
                   <div className="h-100">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                      Gray Tier Technologies, LLC will provide SEIM which
+                      provides 24x7x365 monitoring for known and unknown cyber
+                      threats. This will include the use of signature,
+                      behavioral and anomaly detection capabilities, threat
+                      intelligence, and incident response. Near real-time
+                      consolation will be provided, to the customer’s POC, for
+                      all alerts. A situational report will be provided as a
+                      summary of all network activity.
+                    </p>
+                    <p>
+                      The following General Solutions will be provided for SEIM:
+                    </p>
+                    <ul>
+                      <li className="text-left">
+                        Cybersecurity Consulting based off findings
+                      </li>
+                      <li className="text-left">Endpoint Detection</li>
+                      <li className="text-left">Log Collection & Management</li>
+                      <li className="text-left">Monitoring and Alerting</li>
+                      <li className="text-left">
+                        Incident Response Recommendation
+                      </li>
+                      <li className="text-left">Program Development</li>
+                      <li className="text-left">Threat Intelligence</li>
+                      <li className="text-left">
+                        Threat Reporting (Situational Awareness)
+                      </li>
+                      <li className="text-left">
+                        VPN for secure remote service
+                      </li>
+                      <li className="text-left">
+                        Encrypted Storage of metadata
+                      </li>
+                    </ul>
                   </div>
                 </ScrollAnimation>
               </div>
 
               <div className="col-md-6 text-center mb-4">
-                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
-                  <h2 className="font-weight-bold mb-3">Cyber Threat Hunting</h2>
+                <ScrollAnimation animateIn="fadeInDown" className="h-100">
+                  <h2 className="font-weight-bold mb-3">
+                    <div className="img-fluid">
+                      <img src="/cyber.jpg" alt="" />
+                    </div>
+                    Cyber Threat Hunting
+                  </h2>
                   <div className="h-100">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                      Cyber threat hunting assumes a mindset that your network
+                      has already been breached because existing controls have
+                      failed. Network health indicators aren’t always entirely
+                      accurate, even when you’re looking for anomalies.
+                      Proactively searching your network for undiscovered
+                      attackers – past and present – can help you detect
+                      incidents sooner and find threats you wouldn’t have caught
+                      otherwise. The average attacker is often not discovered
+                      until weeks or even months after they breach an IT
+                      environment, and often by a third party. So you might not
+                      find out about threat actors lurking on your systems until
+                      it’s too late.
+                    </p>
                   </div>
                 </ScrollAnimation>
               </div>
-
-
-             
             </div>
           </div>
         </div>
@@ -85,69 +167,134 @@ class whoWeArePage extends React.Component {
           <div className="container">
             <div className="row mb-5">
               <div className="col-12 text-center">
-                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
-                  <h2 className="font-weight-bold mb-3">Compliance & Strategies</h2>
+                <ScrollAnimation animateIn="fadeInDown" className="h-100">
+                  <div className="img-fluid imgstr">
+                    <img src="/strategy.jpg" alt="" />
+                  </div>
+                  <h2 className="font-weight-bold mb-3">
+                    Compliance & Strategies
+                  </h2>
                   <div className="h-100">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                      Gray Tier Technologies, LLC will provide expert
+                      consultation for security & risks. Gray Tier continually
+                      will work with clients to identify risk areas within their
+                      organization and develop security strategies and solutions
+                      that will enable them to better protect internal and
+                      client data. Our policy consultation will focus on
+                      cybersecurity, completing risk assessments and developing
+                      a cybersecurity program that will focus on security
+                      enhancements and strategy.
+                    </p>
+                    <p>
+                      The following solutions will be provided for Policy
+                      Consultation:
+                    </p>
+                    <ul>
+                      <li className="text-left">Security Policy Development</li>
+                      <li className="text-left">Policy Templates</li>
+                      <li className="text-left">
+                        Research Industry Needs and Compliance
+                      </li>
+                    </ul>
                   </div>
                 </ScrollAnimation>
               </div>
-             
             </div>
           </div>
         </div>
-      
-
 
         <div className="page-content bg-light">
           <div className="container">
             <div className="row mb-5">
               <div className="col-12 text-center">
-                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
+                <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <h2 className="font-weight-bold mb-3">Industries</h2>
                   <div className="h-100 mt-4">
                     <div className="row">
                       <div className="col-md-4">
                         <ScrollAnimation animateIn="fadeInUp">
                           <div className="border rounded-0 shadow-lg val-prop">
-                          <img className="img-fluid" src={Financial} width={150} alt="Financial Services"/>
-                          <h4 className="my-3">Financial Services</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          <Link className="btn btn-primary" role="button" to="/">Read More</Link>
-                          </div>                          
-                        </ScrollAnimation>
-                      </div>
-                      <div className="col-md-4">
-                        <ScrollAnimation animateIn="fadeInUp">
-                        <div className="border rounded-0 shadow-lg val-prop">
-                        <img className="img-fluid" src={Hospitality} width={150} alt="Service & Hospitality"/>
-                          <h4 className="my-3">Service & Hospitality</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          <Link className="btn btn-primary" role="button" to="/">Read More</Link>
-                          </div>   
-                          
+                            <img
+                              className="img-fluid"
+                              src={Financial}
+                              width={150}
+                              alt="Financial Services"
+                            />
+                            <h4 className="my-3">Financial Services</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua.
+                            </p>
+                            <Link
+                              className="btn btn-primary"
+                              role="button"
+                              to="/"
+                            >
+                              Read More
+                            </Link>
+                          </div>
                         </ScrollAnimation>
                       </div>
                       <div className="col-md-4">
                         <ScrollAnimation animateIn="fadeInUp">
                           <div className="border rounded-0 shadow-lg val-prop">
-                          <img className="img-fluid" src={Federal} width={150} alt="Federal"/>
-                          <h4 className="my-3">Federal</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          <Link className="btn btn-primary" role="button" to="/public-sector">Read More</Link>
-                          </div>  
+                            <img
+                              className="img-fluid"
+                              src={Hospitality}
+                              width={150}
+                              alt="Service & Hospitality"
+                            />
+                            <h4 className="my-3">Service & Hospitality</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua.
+                            </p>
+                            <Link
+                              className="btn btn-primary"
+                              role="button"
+                              to="/"
+                            >
+                              Read More
+                            </Link>
+                          </div>
+                        </ScrollAnimation>
+                      </div>
+                      <div className="col-md-4">
+                        <ScrollAnimation animateIn="fadeInUp">
+                          <div className="border rounded-0 shadow-lg val-prop">
+                            <img
+                              className="img-fluid"
+                              src={Federal}
+                              width={150}
+                              alt="Federal"
+                            />
+                            <h4 className="my-3">Federal</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua.
+                            </p>
+                            <Link
+                              className="btn btn-primary"
+                              role="button"
+                              to="/public-sector"
+                            >
+                              Read More
+                            </Link>
+                          </div>
                         </ScrollAnimation>
                       </div>
                     </div>
                   </div>
                 </ScrollAnimation>
               </div>
-             
             </div>
           </div>
         </div>
-        
-     
+
         <Overview />
       </Layout>
     )

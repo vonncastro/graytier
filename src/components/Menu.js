@@ -19,6 +19,9 @@ export default () => (
                 <Link to="/about">About</Link>
               </li>
               <li>
+                <Link to="/who-we-are">Who We Are</Link>
+              </li>
+              <li>
                 <Link to="/partners">Partners</Link>
               </li>
               <li>
@@ -48,10 +51,10 @@ export default () => (
               <li>
                 <Link to="/news">News</Link>
               </li>
-               <li>
+              <li>
                 <Link to="/data-sheets">Data Sheets</Link>
               </li>
-               <li>
+              <li>
                 <Link to="/white-papers">White Papers</Link>
               </li>
             </ul>
