@@ -87,8 +87,7 @@ class whoWeArePage extends React.Component {
                     />
                   </div>
                   <h2 className="font-weight-bold mb-3">
-                    Incident Response <br />
-                    Services
+                    Incident Response Services
                   </h2>
                   <div className="h-100">
                     <p>
