@@ -357,22 +357,15 @@ class PublicSectorPage extends React.Component {
                 </p>
                 <p>
                   Similar to industry-specific cyber regulations like those in
-                  the{' '}
-                  <a
-                    href="https://deltarisk.com/industries/healthcare/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    healthcare
-                  </a>{' '}
-                  or{' '}
-                  <a
-                    href="https://deltarisk.com/industries/financial-services/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    financial services
-                  </a>{' '}
+                  the
+                  {/*{' '}
+                  <a href="" target="_blank" rel="noopener noreferrer"> */}
+                  &nbsp;healthcare
+                  {/*</a>{' '}*/}
+                  &nbsp;or{' '}
+                  {/*<a href="" target="_blank" rel="noopener noreferrer">*/}
+                  financial services
+                  {/*</a>{' '}*/}
                   industries, FISMA requires each federal agency to develop,
                   document, and implement a cyber security program. In addition
                   to all federal agencies, FISMA also applies to state agencies
@@ -439,7 +432,7 @@ class PublicSectorPage extends React.Component {
                       Cyber Security Assessments for the Public Sector
                     </a>
                   </div>
-                  <div className="col-md-3">
+                  {/*} <div className="col-md-3">
                     <a
                       href="https://go.deltarisk.com/l/513911/2019-04-10/czvys5/513911/190190/DS_Insider_Threats.pdf"
                       target="_blank"
@@ -458,7 +451,7 @@ class PublicSectorPage extends React.Component {
                     >
                       Insider Threats
                     </a>
-                  </div>
+                  </div> */}
                   <div className="col-md-3">
                     <a
                       href="/Gray_Tier_Tech_IR.pdf"

@@ -9,6 +9,11 @@ import Overview from '../components/overview'
 import Financial from '../images/001-hand.png'
 import Hospitality from '../images/002-kindness.png'
 import Federal from '../images/003-government.png'
+import Penetration from '../images/penetration-testing.png'
+import Threat from '../images/threat-simulation.png'
+import Incident from '../images/incident.png'
+import SEIM from '../images/penetration.png'
+import Compliance from '../images/compliance.png'
 
 class whoWeArePage extends React.Component {
   render() {
@@ -43,7 +48,12 @@ class whoWeArePage extends React.Component {
               <div className="col-md-6 text-center mb-4">
                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <div className="img-fluid">
-                    <img src="/penetration-test.jpg" alt="" />
+                    <img
+                      className="img-fluid"
+                      src={Penetration}
+                      width={150}
+                      alt="Financial Services"
+                    />
                   </div>
                   <h2 className="font-weight-bold mb-3">
                     Penetration Testing & Assessments
@@ -69,7 +79,12 @@ class whoWeArePage extends React.Component {
               <div className="col-md-6 text-center mb-4">
                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <div className="img-fluid">
-                    <img src="/IR.jpg" alt="" />
+                    <img
+                      className="img-fluid"
+                      src={Incident}
+                      width={150}
+                      alt="Financial Services"
+                    />
                   </div>
                   <h2 className="font-weight-bold mb-3">
                     Incident Response <br />
@@ -91,7 +106,12 @@ class whoWeArePage extends React.Component {
               <div className="col-md-6 text-center mb-4">
                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <div className="img-fluid">
-                    <img src="/networksec.jpg" alt="" />
+                    <img
+                      className="img-fluid"
+                      src={SEIM}
+                      width={150}
+                      alt="Financial Services"
+                    />
                   </div>
                   <h2 className="font-weight-bold mb-3">SEIM</h2>
                   <div className="h-100">
@@ -138,7 +158,12 @@ class whoWeArePage extends React.Component {
                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
                   <h2 className="font-weight-bold mb-3">
                     <div className="img-fluid">
-                      <img src="/cyber.jpg" alt="" />
+                      <img
+                        className="img-fluid"
+                        src={Threat}
+                        width={150}
+                        alt="Financial Services"
+                      />
                     </div>
                     Cyber Threat Hunting
                   </h2>
@@ -168,8 +193,13 @@ class whoWeArePage extends React.Component {
             <div className="row mb-5">
               <div className="col-12 text-center">
                 <ScrollAnimation animateIn="fadeInDown" className="h-100">
-                  <div className="img-fluid imgstr">
-                    <img src="/strategy.jpg" alt="" />
+                  <div className="img-fluid">
+                    <img
+                      className="img-fluid"
+                      width={150}
+                      src={Compliance}
+                      alt="Financial Services"
+                    />
                   </div>
                   <h2 className="font-weight-bold mb-3">
                     Compliance & Strategies
