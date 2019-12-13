@@ -24,17 +24,6 @@ import ApplicationTesting from '../images/application-testing.png'
 import WebApplicationTesting from '../images/web-application-testing.png'
 import OpenSourceIntelligence from '../images/open-source-intelligence.png'
 import SocialEngineering from '../images/social-engineering.png'
-
-// import BunkerLabs from '../images/bunker-labs.png'
-// import CACI from '../images/cacilogo-136x75.png'
-// import Jacobs from '../images/jlogo-239x37.png'
-// import HomelandSecurity from '../images/homeland-security.png'
-// import Leidos from '../images/leidos.png'
-// import Perspecta from '../images/perspecta.png'
-// import USCustoms from '../images/us-customs.png'
-// import JSP from '../images/jsp.png'
-// import USCyberCommand from '../images/us-cyber-command.png'
-// import NCCIC from '../images/nccic.png'
 import marked from 'marked'
 
 class IndexPage extends React.Component {
@@ -144,12 +133,12 @@ class IndexPage extends React.Component {
                         operations from network infiltration and intelligence
                         gathering to implementing tailored effects.
                       </p>
-                      <div className="col-link">
+                      {/*<div className="col-link">
                         <Link className="arrow-link" to="/">
                           Learn More
                           <i className="fa fa-chevron-circle-right" />
                         </Link>
-                      </div>
+                      </div>*/}
                     </div>
                   </ScrollAnimation>
                 </div>
@@ -167,12 +156,12 @@ class IndexPage extends React.Component {
                         Our consulting services are tailored to help our clients
                         solve their toughest security challenges.
                       </p>
-                      <div className="col-link">
+                      {/*<div className="col-link">
                         <Link className="arrow-link" to="/">
                           Learn More
                           <i className="fa fa-chevron-circle-right" />
                         </Link>
-                      </div>
+                      </div>*/}
                     </div>
                   </ScrollAnimation>
                 </div>
@@ -191,12 +180,12 @@ class IndexPage extends React.Component {
                         defensive tools to support our client’s training and
                         operations.
                       </p>
-                      <div className="col-link">
+                      {/*<div className="col-link">
                         <Link className="arrow-link" to="/">
                           Learn More
                           <i className="fa fa-chevron-circle-right" />
                         </Link>
-                      </div>
+                      </div>*/}
                     </div>
                   </ScrollAnimation>
                 </div>
@@ -208,7 +197,11 @@ class IndexPage extends React.Component {
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-8">
-                  <h2 class="font-weight-bold"><Link className="text-dark-blue" to="/who-we-are">Who We Are</Link></h2>
+                  <h2 class="font-weight-bold">
+                    <Link className="text-dark-blue" to="/who-we-are">
+                      Who We Are
+                    </Link>
+                  </h2>
                   <ScrollAnimation animateIn="fadeIn">
                     <p class="lead py-4">
                       We provide technical assessment program development,
@@ -217,7 +210,11 @@ class IndexPage extends React.Component {
                       Procedures.
                     </p>
                   </ScrollAnimation>
-                  <Link className="btn btn-primary" role="button" to="/who-we-are">
+                  <Link
+                    className="btn btn-primary"
+                    role="button"
+                    to="/who-we-are"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -227,7 +224,11 @@ class IndexPage extends React.Component {
 
           <div className="bg-dark services">
             <div className="container">
-              <h2 className="font-weight-bold"><Link className="text-white" to="/services">How We Help</Link></h2>
+              <h2 className="font-weight-bold">
+                <Link className="text-white" to="/services">
+                  How We Help
+                </Link>
+              </h2>
               <div className="row text-center justify-content-center my-5">
                 <div className="col-md-6 col-lg-4 mb-4 props">
                   <ScrollAnimation animateIn="fadeIn" className="h-100">
@@ -459,7 +460,7 @@ class IndexPage extends React.Component {
               </Link>
             </div>
           </div>
-          
+
           <Overview />
 
           <div className="resources">
@@ -524,11 +525,11 @@ class IndexPage extends React.Component {
                   })}
                 </div>
                 <div className="col-lg-5 bg-light posts">
-                  <div className="row">
-                    <div className="col-12 col-md-5 text-center text-md-left align-self-center pb-md-4">
+                  <div className="row justify-content-between">
+                    <div className="col-12 col-md-6 text-center text-md-left align-self-center pb-md-4">
                       <h3 className="font-weight-bold keep-all">Newsroom</h3>
                     </div>
-                    <div className="col-md-7 text-center text-md-right align-self-center pb-4">
+                    <div className="col-md-5 text-center text-md-right align-self-center pb-4">
                       <Link className="arrow-link pr-0" to="/news">
                         Latest Stories&nbsp;
                         <i className="fa fa-long-arrow-right" />
