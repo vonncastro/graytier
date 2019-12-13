@@ -116,22 +116,32 @@ export const pageQuery = graphql`
       }
     }
     allSanityPost(
-      filter: {
-        categories: { elemMatch: { title: { eq: "blog" } } }
-        status: { eq: "published" }
-      }
+      filter: { status: { eq: "published" } }
+      sort: { fields: [author____createdAt], order: DESC }
     ) {
       edges {
         node {
           id
           title
+          publishedAt(formatString: "MMMM DD, YYYY")
           excerpt
           slug {
             current
           }
-          publishedAt(formatString: "MMMM DD, YYYY")
+          mainImage {
+            asset {
+              id
+              url
+              originalFilename
+              fluid {
+                src
+              }
+            }
+          }
         }
       }
     }
   }
 `
+
+

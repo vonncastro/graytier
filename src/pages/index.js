@@ -32,6 +32,7 @@ class IndexPage extends React.Component {
     const siteDescription = this.props.data.site.siteMetadata.description
     const { data } = this.props
     const posts = data.allSanityPost.edges
+    const news = data.allSanityNews.edges
 
     // const logos = {
     //   slidesPerView: 4,
@@ -537,54 +538,37 @@ class IndexPage extends React.Component {
                     </div>
                   </div>
                   <div className="h-100">
-                    <div className="news post-item">
-                      <Link className="m-0 post-link" to="/">
-                        <h6 className="m-0">
-                          Gray Tier Technologies continues to grow
-                        </h6>
-                      </Link>
-                      <span className="small text-uppercase text-muted">
-                        September 09, 2019
-                      </span>
-                      <p className="truncate-3 text-muted small">
-                        Gray Tier Technologies continues the positive trend in
-                        January and February 2017. &nbsp;By the end of February
-                        Gray Tier will add 5 new employees to its staff, mostly
-                        to the JSP-DCO effort.
-                      </p>
-                      <Link
-                        className="btn btn-primary btn-sm mt-4 btn-black-transparent"
-                        role="button"
-                        to="/"
-                      >
-                        Read More
-                      </Link>
-                    </div>
-                    <div className="news post-item">
-                      <Link className="m-0 post-link" to="/">
-                        <h6 className="m-0">
-                          Gray Tier Technologies on Winning Team for JSP CND-SP
-                        </h6>
-                      </Link>
-                      <span className="small text-uppercase text-muted d-block">
-                        September 04, 2019
-                      </span>
-                      <p className="truncate-3 text-muted small">
-                        Gray Tier Technologies LLC was on the winning team
-                        that&nbsp;won a task order through the Department of
-                        Defense Joint Service Provider program to develop and
-                        deploy an in-depth security network strategy that will
-                        deter and neutralize malicious activities for various
-                        offices within the Pentagon.
-                      </p>
-                      <Link
-                        className="btn btn-primary btn-sm mt-4 btn-black-transparent"
-                        role="button"
-                        to="/"
-                      >
-                        Read More
-                      </Link>
-                    </div>
+                    {news.map(({ node }) => {
+                      const title = node.title
+                      return (
+                        <div className="news post-item">
+                          <Link
+                            className="m-0 post-link"
+                            to={node.slug.current}
+                            title={title}
+                          >
+                            <h6>{title}</h6>
+                          </Link>
+                          <span className="small text-uppercase text-muted">
+                            {node.publishedAt}
+                          </span>
+                          <div className="truncate-3 text-muted small">
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: marked(node.excerpt),
+                              }}
+                            />
+                          </div>
+                          <Link
+                            className="btn btn-primary btn-sm mt-4 btn-black-transparent"
+                            role="button"
+                            to={node.slug.current}
+                          >
+                            Read More
+                          </Link>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               </div>
@@ -630,6 +614,23 @@ export const indexPageQuery = graphql`
                 src
               }
             }
+          }
+        }
+      }
+    }
+    allSanityNews(
+      limit: 2
+      filter: { status: { eq: "published" } }
+      sort: { fields: [author____createdAt], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          title
+          publishedAt(formatString: "MMMM DD, YYYY")
+          excerpt
+          slug {
+            current
           }
         }
       }

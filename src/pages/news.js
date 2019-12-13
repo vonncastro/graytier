@@ -11,7 +11,7 @@ class NewsIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = 'News'
-    const posts = data.allSanityPost.edges
+    const posts = data.allSanityNews.edges
 
     console.log(this.props)
 
@@ -104,21 +104,29 @@ export const newsPageQuery = graphql`
         title
       }
     }
-    allSanityPost(
-      filter: {
-        categories: { elemMatch: { title: { eq: "news" } } }
-        status: { eq: "published" }
-      }
+    allSanityNews(
+      filter: { status: { eq: "published" } }
+      sort: { fields: [author____createdAt], order: DESC }
     ) {
       edges {
         node {
           id
           title
+          publishedAt(formatString: "MMMM DD, YYYY")
           excerpt
           slug {
             current
           }
-          publishedAt(formatString: "MMMM DD, YYYY")
+          mainImage {
+            asset {
+              id
+              url
+              originalFilename
+              fluid {
+                src
+              }
+            }
+          }
         }
       }
     }
