@@ -31,11 +31,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
-        // head: true,
-        // anonymize: true,
-        // respectDNT: true,
-        // cookieDomain: `example.com`
+        trackingId: `UA-66848920-1`,
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        cookieDomain: `graytier.com`,
       },
     },
     {
