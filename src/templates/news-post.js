@@ -81,8 +81,8 @@ class BlogPostTemplate extends React.Component {
                   </li>
                 </ul>
                 <div className="text-center mt-5">
-                  <Link className="btn btn-primary" role="button" to="/blog">
-                    Back to the Blog
+                  <Link className="btn btn-primary" role="button" to="/news">
+                    Back to News
                   </Link>
                 </div>
               </div>
