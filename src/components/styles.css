@@ -206,11 +206,11 @@ li.address:before {
 }
 
 .footer h5 {
-  word-break: keep-all;
+  white-space: nowrap;
 }
 
-.keep-all {
-  word-break: keep-all !important;
+.nowrap {
+  white-space: nowrap;
 }
 
 .btn.btn-primary {
@@ -958,5 +958,3 @@ ul.blog-nav li {
     padding: 100px;
   }
 }
-
-

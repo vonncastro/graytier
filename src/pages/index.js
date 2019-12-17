@@ -470,7 +470,7 @@ class IndexPage extends React.Component {
                 <div className="col-lg-7 d-flex flex-column bg-blue posts">
                   <div className="row">
                     <div className="col-12 col-md-8 text-center text-md-left align-self-center pb-md-4">
-                      <h3 className="font-weight-bold keep-all text-white">
+                      <h3 className="font-weight-bold nowrap text-white">
                         From the Blog
                       </h3>
                     </div>
@@ -526,12 +526,12 @@ class IndexPage extends React.Component {
                   })}
                 </div>
                 <div className="col-lg-5 bg-light posts">
-                  <div className="row justify-content-between">
+                  <div className="row">
                     <div className="col-12 col-md-6 text-center text-md-left align-self-center pb-md-4">
-                      <h3 className="font-weight-bold keep-all">Newsroom</h3>
+                      <h3 className="font-weight-bold nowrap">Newsroom</h3>
                     </div>
-                    <div className="col-md-5 text-center text-md-right align-self-center pb-4">
-                      <Link className="arrow-link pr-0" to="/news">
+                    <div className="col-md-6 text-center text-md-right align-self-center pb-4">
+                      <Link className="arrow-link pr-0" to="/blog">
                         Latest Stories&nbsp;
                         <i className="fa fa-long-arrow-right" />
                       </Link>
