@@ -52,7 +52,7 @@ class BlogPostTemplate extends React.Component {
                     <img
                       src={post.mainImage.asset.url}
                       alt={post.mainImage.originalFilename}
-                      className="img-fluid"
+                      className="img-fluid mb-5"
                     />
                   )}
                 </div>

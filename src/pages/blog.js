@@ -90,7 +90,9 @@ class BlogIndex extends React.Component {
                         <div
                           className="blog-post-img h-100"
                           style={{
-                            backgroundImage: `url('https://picsum.photos/200/300/?blur=2')`,
+                            backgroundImage: `url('${
+                              node.mainImage.asset.fluid.src
+                            }')`,
                           }}
                         />
                       </div>
@@ -143,5 +145,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-
