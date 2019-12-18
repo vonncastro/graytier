@@ -485,7 +485,7 @@ class IndexPage extends React.Component {
                     const title = node.title
                     return (
                       <div className="row flex-grow-1">
-                        <div className="col-lg-12 order-2 order-lg-1 pr-lg-0">
+                        <div className="col-lg-12 order-2 order-lg-1">
                           <div className="blog post-item h-100">
                             <Link
                               className="m-0 post-link"
@@ -557,6 +557,9 @@ class IndexPage extends React.Component {
                             <h6>{title}</h6>
                           </Link>
                           <span className="small text-uppercase text-muted">
+                            <i className="fa fa-user pr-1" />
+                            {node.author.name}&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i className="fa fa-calendar-o pr-1" />
                             {node.publishedAt}
                           </span>
                           <div className="truncate-3 text-muted small">
@@ -601,7 +604,7 @@ export const indexPageQuery = graphql`
     allSanityPost(
       limit: 1
       filter: { status: { eq: "published" } }
-      sort: { fields: [author____createdAt], order: DESC }
+      sort: { fields: [publishedAt], order: DESC }
     ) {
       edges {
         node {
@@ -639,6 +642,9 @@ export const indexPageQuery = graphql`
           title
           publishedAt(formatString: "MMMM DD, YYYY")
           excerpt
+          author {
+            name
+          }
           slug {
             current
           }

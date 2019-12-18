@@ -129,7 +129,7 @@ export const pageQuery = graphql`
     }
     allSanityPost(
       filter: { status: { eq: "published" } }
-      sort: { fields: [author____createdAt], order: DESC }
+      sort: { fields: [publishedAt], order: DESC }
     ) {
       edges {
         node {

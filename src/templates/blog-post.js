@@ -35,9 +35,12 @@ class BlogPostTemplate extends React.Component {
                   <h1 className="font-weight-bold">{post.title}</h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" delay="1000">
-                  <h5 className="pt-3 font-weight-lighter text-white">
+                  <h6 className="pt-3 font-weight-lighter text-white-50">
+                    <i className="fa fa-user pr-1" />
+                    {post.author.name}&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i className="fa fa-calendar-o pr-1" />
                     {post.publishedAt}
-                  </h5>
+                  </h6>
                 </ScrollAnimation>
               </div>
             </div>
@@ -118,6 +121,9 @@ export const query = graphql`
         title
       }
       title
+      author {
+        name
+      }
       slug {
         current
       }

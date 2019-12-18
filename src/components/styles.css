@@ -483,6 +483,10 @@ a.btn {
   content: '\f1ea';
 }
 
+.post-item:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
 .resources {
   /*padding-top: 100px;*/
   /*padding-bottom: 100px;*/
