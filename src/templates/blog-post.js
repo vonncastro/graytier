@@ -48,6 +48,7 @@ class BlogPostTemplate extends React.Component {
             <div className="row justify-content-center">
               <div className="col-md-9">
                 <div className="text-center">
+                  {/*
                   {post.mainImage && (
                     <img
                       src={post.mainImage.asset.url}
@@ -55,6 +56,7 @@ class BlogPostTemplate extends React.Component {
                       className="img-fluid mb-5"
                     />
                   )}
+                  */}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: marked(post.body) }} />
                 <hr
