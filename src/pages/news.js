@@ -56,7 +56,7 @@ class NewsIndex extends React.Component {
                   return (
                     <div className="col-lg-5 mb-4">
                       <ScrollAnimation animateIn="fadeIn" className="h-100">
-                        <div className="blog post-item h-100">
+                        <div className="news post-item h-100">
                           <Link
                             className="m-0 post-link"
                             to={node.slug.current}
