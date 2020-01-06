@@ -6,6 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 import HeroParticles from '../components/particles'
 import Overview from '../components/overview'
+import sdvosb from '../images/sdvosb-logo.png'
 
 class AboutPage extends React.Component {
   render() {
@@ -105,11 +106,30 @@ class AboutPage extends React.Component {
                     proprietary technologies, Gray Tier is poised to offer
                     cutting edge solutions to our clients.
                   </p>
+                  <div className="page-content2 text-center">
+                    <div className="container">
+                      <ScrollAnimation animateIn="fadeIn">
+                        {/* <h2 className="font-weight-bold pb-4">Our Strategic Partners</h2>*/}
+                        <hr />
+                        <a
+                          href="https://www.vip.vetbiz.va.gov/Search/BusinessProfile/5bbb3258-766a-e811-9445-0050568df19d"
+                          target="_blank"
+                        >
+                          <img
+                            className="img-fluid link-logo"
+                            src={sdvosb}
+                            alt="sdvosb"
+                          />
+                        </a>
+                      </ScrollAnimation>
+                    </div>
+                  </div>
                 </ScrollAnimation>
               </div>
             </div>
           </div>
         </div>
+
         <Overview />
       </Layout>
     )

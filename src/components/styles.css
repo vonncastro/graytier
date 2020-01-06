@@ -144,6 +144,13 @@ img.partner-logo {
   transition: all 0.35s ease-in-out;
 }
 
+img.link-logo {
+  filter: grayscale(1) opacity(0.75);
+  padding: 10px !important;
+  transform: scale(0.9);
+  transition: all 0.35s ease-in-out;
+}
+
 .partners-section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -556,6 +563,12 @@ img.partner-logo:hover {
   transition: all 0.35s ease-in-out;
 }
 
+img.link-logo:hover {
+  filter: none;
+  transform: scale(1);
+  transition: all 0.35s ease-in-out;
+}
+
 .arrow-link {
   opacity: 1;
   font-weight: 600;
@@ -882,6 +895,10 @@ a.social-link:last-child {
   padding-bottom: 100px;
 }
 
+.page-content2 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
 /*loader for job postings page*/
 .loading {
   background: url('../images/loading.gif') center no-repeat;
