@@ -5,6 +5,7 @@ import SEO from '../../components/seo'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 import HeroParticles from '../../components/particles'
+import Modal from '../../components/careers/Modal'
 
 class JobPostings extends React.Component {
   render() {
@@ -41,6 +42,9 @@ class JobPostings extends React.Component {
                   src="https://gray-tier-technologies.breezy.hr/embed/positions?bzsrc=true&amp;include_filters=true&amp;link_external=true&amp;no_pos_msg=true&amp;p=https://www.graytier.com/careers/job-postings/"
                   height="350"
                 ></iframe>
+
+                <Modal />
+
                 {/*
                 <ScrollAnimation animateIn="fadeIn">
                   <iframe

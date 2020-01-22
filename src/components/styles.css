@@ -781,6 +781,19 @@ a.social-link:last-child {
   padding: 5px 15px !important;
 }
 
+.modal-button {
+  color: #434647;
+  border: 2px solid #4e4e4e !important;
+  background: transparent;
+  padding: 5px 15px !important;
+}
+.modal-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 15px -20px rgba(18, 40, 95, 0.35) !important;
+  background: none;
+  color: #434647;
+}
+
 .post-link {
   color: #2f2f2f;
   font-weight: 600;
