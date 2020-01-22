@@ -14,7 +14,7 @@ const JobLocations = props => {
         View Job Openings
       </Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalBody>
+        <ModalBody className="mt-2">
           <iframe
             title="Job Postings"
             id="BrzyHr_iframe"
