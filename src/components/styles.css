@@ -785,7 +785,7 @@ a.social-link:last-child {
   color: #434647;
   border: 2px solid #4e4e4e !important;
   background: transparent;
-  padding: 5px 15px !important;
+  padding: 10px 20px !important;
 }
 .modal-button:hover {
   transform: translateY(-5px);
