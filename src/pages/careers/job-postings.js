@@ -4,9 +4,7 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/seo'
 import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
-import { LazyLoadComponent } from 'react-lazy-load-image-component'
 import HeroParticles from '../../components/particles'
-import BreezyHR from '../../components/careers/breezyHR'
 
 class JobPostings extends React.Component {
   render() {
@@ -33,6 +31,7 @@ class JobPostings extends React.Component {
             <div className="row justify-content-center">
               <div className="col-md-8">
                 <iframe
+                  title="Job Postings"
                   id="BrzyHr_iframe"
                   width="610"
                   frameborder="0"

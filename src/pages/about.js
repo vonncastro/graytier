@@ -114,6 +114,7 @@ class AboutPage extends React.Component {
                         <a
                           href="https://www.vip.vetbiz.va.gov/Search/BusinessProfile/5bbb3258-766a-e811-9445-0050568df19d"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <img
                             className="img-fluid link-logo"
