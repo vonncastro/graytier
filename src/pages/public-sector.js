@@ -103,7 +103,7 @@ class PublicSectorPage extends React.Component {
                     <p className="mb-5">
                       To learn more about how to order go to{' '}
                       <a
-                        href="www.gsa.gov/portal/content/198589"
+                        href="https://www.gsa.gov/portal/content/198589"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -391,13 +391,10 @@ class PublicSectorPage extends React.Component {
                 <p>
                   FISMA assigns the role of developing the standards and minimum
                   security requirements to the National Institute of Standards
-                  and Technology (
-                  <a href="/services/advisory-services/nist-csf-compliance/">
-                    NIST
-                  </a>
-                  ), which the Secretary of Commerce approves. The requirements
-                  are extensive, encompassing 17 areas of security detailing
-                  approximately 205 specific requirements.
+                  and Technology (NIST), which the Secretary of Commerce
+                  approves. The requirements are extensive, encompassing 17
+                  areas of security detailing approximately 205 specific
+                  requirements.
                 </p>
               </div>
             </ScrollAnimation>
