@@ -28,7 +28,7 @@ class SideBarMenu extends React.Component {
       overflow: 'visible',
       cursor: 'pointer',
       // disable touch highlighting on devices
-      WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+      WebkitTapHighlightColor: 'rgba(0,0,0,1)',
     }
     return (
       <SideBar
@@ -55,7 +55,7 @@ class SideBarMenu extends React.Component {
         }}
       >
         <h2
-          className="bm-burger-button float-right text-white m-0"
+          className="bm-burger-button float-right m-0"
           onClick={() => this.toggleMenu()}
         >
           <svg viewBox="0 0 96 96" height="50px" style={style}>
