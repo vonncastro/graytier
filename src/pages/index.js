@@ -538,7 +538,7 @@ class IndexPage extends React.Component {
                       <h3 className="font-weight-bold nowrap">Newsroom</h3>
                     </div>
                     <div className="col-md-6 text-center text-md-right align-self-center pb-4">
-                      <Link className="arrow-link pr-0" to="/blog">
+                      <Link className="arrow-link pr-0" to="/news">
                         Latest Stories&nbsp;
                         <i className="fa fa-long-arrow-right" />
                       </Link>
