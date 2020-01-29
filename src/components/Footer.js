@@ -157,7 +157,8 @@ const Footer = () => (
         <div class="row">
           <div class="col-md-6 text-center text-sm-left text-lg-left">
             <span>
-              © 2019 Gray Tier Technologies, LLC. All rights reserved.
+              © {new Date().getFullYear()} Gray Tier Technologies, LLC. All
+              rights reserved.
             </span>
           </div>
           <div class="col-md-6 text-center text-sm-right text-lg-right">
