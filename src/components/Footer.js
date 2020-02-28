@@ -67,6 +67,12 @@ const Footer = () => (
                   <br />
                   Alexandria, VA 22314
                 </li>
+                <li className="address">
+                  100 E. Pine Street, <br />
+                  Suite 110
+                  <br />
+                  Orlando, FL 32801
+                </li>
                 <li className="email">
                   <a href="mailto:info@graytier.com">
                     <strong>info@graytier.com</strong>
