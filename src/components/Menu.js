@@ -28,6 +28,9 @@ export default () => (
                 <Link to="/services">Services</Link>
               </li>
               <li>
+                <Link to="/capabilities">Capabilities</Link>
+              </li>
+              <li>
                 <Collapsible trigger={<Link to="/careers">Careers</Link>}>
                   <ul className="submenu">
                     <li>

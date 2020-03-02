@@ -24,6 +24,11 @@ import Influence6 from '../images/influences-logo-6.png'
 import Product1 from '../images/products-logo-1.png'
 import Splunk from '../images/splunk-logo.png'
 import VAS from '../images/vas-logo.png'
+import PTS from '../images/pts.png'
+import CVE from '../images/cve.png'
+import SEAS from '../images/seas.png'
+import RTAS from '../images/rtas.png'
+import SIEMAAS from '../images/siemaas.png'
 
 class Capabilities extends React.Component {
 	render() {
@@ -265,7 +270,7 @@ class Capabilities extends React.Component {
 							</ScrollAnimation>
 						</div>
 					</section>
-					<section id="products" className="my-5">
+					<section id="products" className="page-content">
 						<div className="container">
 							<div className="row justify-content-center">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
@@ -274,18 +279,22 @@ class Capabilities extends React.Component {
 							</div>
 							<div className="row align-items-center">
 								<div className="col-lg-6">
-									<img className="img-fluid" src={Product1} alt="Product 6" />
+									<ScrollAnimation animateIn="fadeInLeft" className="h-100">
+										<img className="img-fluid" src={Product1} alt="Product 6" />
+									</ScrollAnimation>
 								</div>
 								<div className="col-lg-6">
-									<p style={{ fontSize: `22px` }}>
-										Skillwerks is an on demand assessment platform to
-										demonstrate individual computer skills and competencies.
-									</p>
+									<ScrollAnimation animateIn="fadeInRight" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											Skillwerks is an on demand assessment platform to
+											demonstrate individual computer skills and competencies.
+										</p>
+									</ScrollAnimation>
 								</div>
 							</div>
 						</div>
 					</section>
-					<section id="splunk" className="my-5">
+					<section id="splunk" className="page-content">
 						<div className="container">
 							<div className="row justify-content-center">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
@@ -294,32 +303,38 @@ class Capabilities extends React.Component {
 							</div>
 							<div className="row">
 								<div className="col-lg-12">
-									<p style={{ fontSize: `22px` }}>
-										<strong>Splunk</strong> − Delivering & Developing powerful
-										operational intelligence by providing real-time insight into
-										your information systems through dashboards, charts,
-										reports, and alerts.
-									</p>
+									<ScrollAnimation animateIn="fadeIn" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											<strong>Splunk</strong> − Delivering & Developing powerful
+											operational intelligence by providing real-time insight
+											into your information systems through dashboards, charts,
+											reports, and alerts.
+										</p>
+									</ScrollAnimation>
 								</div>
 							</div>
 							<div className="row align-items-center">
 								<div className="col-lg-6">
-									<ul>
-										<li>Security & Compliance</li>
-										<li>Implementation</li>
-										<li>Operation Analytics</li>
-										<li>Assess & Design</li>
-										<li>Cloud</li>
-										<li>Development & Administration</li>
-									</ul>
+									<ScrollAnimation animateIn="fadeInLeft" className="h-100">
+										<ul>
+											<li>Security & Compliance</li>
+											<li>Implementation</li>
+											<li>Operation Analytics</li>
+											<li>Assess & Design</li>
+											<li>Cloud</li>
+											<li>Development & Administration</li>
+										</ul>
+									</ScrollAnimation>
 								</div>
 								<div className="col-lg-6">
-									<img className="img-fluid" src={Splunk} alt="Splunk Logo" />
+									<ScrollAnimation animateIn="fadeInRight" className="h-100">
+										<img className="img-fluid" src={Splunk} alt="Splunk Logo" />
+									</ScrollAnimation>
 								</div>
 							</div>
 						</div>
 					</section>
-					<section id="vas" className="my-5">
+					<section id="vas" className="page-content">
 						<div className="container">
 							<div className="row justify-content-center">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
@@ -328,40 +343,239 @@ class Capabilities extends React.Component {
 							</div>
 							<div className="row">
 								<div className="col-lg-12">
-									<p style={{ fontSize: `22px` }}>
-										<strong>Vulnerability Assessments (VA)</strong> −
-										Independent expert review for a diverse set of potential
-										vulnerabilities across a wide range of technologies.
-									</p>
+									<ScrollAnimation animateIn="fadeIn" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											<strong>Vulnerability Assessments (VA)</strong> −
+											Independent expert review for a diverse set of potential
+											vulnerabilities across a wide range of technologies.
+										</p>
+									</ScrollAnimation>
 								</div>
 								<div className="row align-items-center">
 									<div className="col-lg-6">
-										<ul>
-											<li>
-												Assessment of adequacy and effectiveness of system
-												security control measures
-											</li>
-											<li>
-												Evaluation of multiple technologies including:
-												<ul>
-													<li>Network & Operating Systems</li>
-													<li>Applications (Web & Thick Client)</li>
-													<li>Databases</li>
-												</ul>
-											</li>
-										</ul>
+										<ScrollAnimation animateIn="fadeInLeft" className="h-100">
+											<ul>
+												<li>
+													Assessment of adequacy and effectiveness of system
+													security control measures
+												</li>
+												<li>
+													Evaluation of multiple technologies including:
+													<ul>
+														<li>Network & Operating Systems</li>
+														<li>Applications (Web & Thick Client)</li>
+														<li>Databases</li>
+													</ul>
+												</li>
+											</ul>
+										</ScrollAnimation>
 									</div>
 									<div className="col-lg-6">
-										<div className="d-flex ml-5">
-											<img className="img-fluid w-50" src={VAS} alt="VAS" />
-											<ul className="ml-3" style={{ marginTop: `75px` }}>
-												<li>Vulnerability</li>
-												<li>Threat</li>
-												<li>Asset</li>
-											</ul>
-										</div>
+										<ScrollAnimation animateIn="fadeInRight" className="h-100">
+											<div className="d-flex ml-5">
+												<img className="img-fluid w-50" src={VAS} alt="VAS" />
+												<ul className="ml-3" style={{ marginTop: `75px` }}>
+													<li>Vulnerability</li>
+													<li>Threat</li>
+													<li>Asset</li>
+												</ul>
+											</div>
+										</ScrollAnimation>
 									</div>
 								</div>
+							</div>
+						</div>
+					</section>
+					<section id="pts" className="page-content">
+						<div className="container">
+							<div className="row justify-content-center">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<h1 className="mb-3">Penetration Testing Solution</h1>
+								</ScrollAnimation>
+							</div>
+							<div className="row align-items-center">
+								<div className="col-lg-6">
+									<ScrollAnimation animateIn="fadeLeft" className="h-100">
+										<img
+											className="img-fluid"
+											src={PTS}
+											alt="Pentration Testing Graph"
+										/>
+									</ScrollAnimation>
+								</div>
+								<div className="col-lg-6">
+									<ScrollAnimation animateIn="fadeRight" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											<strong>Pentration Testing (PT)</strong> − Implementation
+											of proven testing methodology and lifecycle emulating
+											modern threats
+										</p>
+										<ul>
+											<li>
+												Independent assessment of systems using perspective of
+												external malicious attacker and informed insider
+											</li>
+											<li>
+												Assessment of business impact and access to
+												organizational vulnerabilities (technical/non-technical)
+												of successful attack
+											</li>
+											<li>
+												Test perimeter defenses, internal attack mitigation
+												defenses, and information security detection and
+												response capabilities
+											</li>
+										</ul>
+									</ScrollAnimation>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="assa" className="page-content">
+						<div className="container">
+							<div className="row justify-content-center">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<h1 className="mb-3">
+										Application Security Assessments Solution
+									</h1>
+								</ScrollAnimation>
+							</div>
+							<div className="row align-items-center">
+								<div className="col-lg-12">
+									<ScrollAnimation animateIn="fadeIn" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											Assessment of security posture of 3rd party or custom
+											developed applications across a wide range of operating
+											platforms and attack perspectives
+										</p>
+									</ScrollAnimation>
+								</div>
+								<div className="row ">
+									<div className="col-lg-6">
+										<ScrollAnimation animateIn="fadeInLeft" className="h-100">
+											<ul>
+												<li>
+													Web Application Vulnerability Assessments/Penetration
+													Tests
+												</li>
+												<li>Mobile Device Application Testing</li>
+												<li>Application Vulnerability Assessments</li>
+												<li>Vulnerability Research & Exploit Development</li>
+											</ul>
+											<p>
+												Credited with over 15 CVEs for discovered
+												vulnerabilities
+											</p>
+										</ScrollAnimation>
+									</div>
+									<div className="col-lg-6">
+										<ScrollAnimation animateIn="fadeInRight" className="h-100">
+											<div className="ml-5">
+												<img
+													className="img-fluid w-50 float-right"
+													src={CVE}
+													alt="CVE"
+												/>
+											</div>
+										</ScrollAnimation>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="seas" className="page-content">
+						<div className="container">
+							<div className="row justify-content-center">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<h1 className="mb-3">
+										Social Engineer Assessments Solutions
+									</h1>
+								</ScrollAnimation>
+							</div>
+							<div className="row align-items-center">
+								<div className="col-lg-6">
+									<ScrollAnimation animateIn="fadeLeft" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											Impact analysis of a successfully executed social
+											engineering campaign in a controlled environment
+										</p>
+										<ul>
+											<li>
+												Open Source Intelligence/Information Gathering (OSINT)
+											</li>
+											<li>Spear-Phishing, Pretexting Campaigns</li>
+											<li>
+												Non-Technical Tests including Baiting, Tailgating,
+												Dumpster Diving, among others
+											</li>
+											<li>Training</li>
+										</ul>
+									</ScrollAnimation>
+								</div>
+								<div className="col-lg-6">
+									<ScrollAnimation animateIn="fadeRight" className="h-100">
+										<img
+											className="img-fluid"
+											src={SEAS}
+											alt="Social Engineer Assessments Solutions"
+										/>
+									</ScrollAnimation>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="pts" className="page-content">
+						<div className="container">
+							<div className="row justify-content-center">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<h1 className="mb-3">Red Team Assessments Solutions</h1>
+								</ScrollAnimation>
+							</div>
+							<div className="row align-items-center">
+								<div className="col-lg-6">
+									<ScrollAnimation animateIn="fadeLeft" className="h-100">
+										<img
+											className="img-fluid"
+											src={RTAS}
+											alt="Red Team Assessments Solutions"
+										/>
+									</ScrollAnimation>
+								</div>
+								<div className="col-lg-6">
+									<ScrollAnimation animateIn="fadeRight" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											Emulation of advanced attack profiles (e.g., nation-state,
+											highly funded criminal organization, Hacktivism)
+										</p>
+										<ul>
+											<li>
+												Assessment of advanced defense and detection
+												capabilities
+											</li>
+										</ul>
+									</ScrollAnimation>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="siemaas" className="page-content">
+						<div className="container">
+							<div className="row justify-content-center">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<h1 className="mb-3">
+										Security Information and Event Management as a Service
+										(SIEMaaS)
+									</h1>
+								</ScrollAnimation>
+							</div>
+							<div className="row justify-content-center">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<img
+										className="img-fluid"
+										src={SIEMAAS}
+										alt="Security Information and Event Managementas a Service"
+									/>
+								</ScrollAnimation>
 							</div>
 						</div>
 					</section>
