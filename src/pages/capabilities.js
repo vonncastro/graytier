@@ -13,14 +13,14 @@ import JSP from '../images/jsp.png'
 import HomelandSecurity from '../images/homeland-security.png'
 import IOC from '../images/ioc.png'
 import USCyberCommand from '../images/us-cyber-command.png'
-import SDVOSB from '../images/sdvosb.jpg'
+import SDVOSB from '../images/sdvosb-logo.png'
 import FSCSP from '../images/fscsp.png'
-import Influence1 from '../images/influences-logo-1.png'
-import Influence2 from '../images/influences-logo-2.png'
-import Influence3 from '../images/influences-logo-3.png'
-import Influence4 from '../images/influences-logo-4.png'
-import Influence5 from '../images/influences-logo-5.png'
-import Influence6 from '../images/influences-logo-6.png'
+import Influence1 from '../images/influences-logo-01.png'
+import Influence2 from '../images/influences-logo-02.png'
+import Influence3 from '../images/influences-logo-03.png'
+import Influence4 from '../images/influences-logo-04.png'
+import Influence5 from '../images/influences-logo-05.png'
+import Influence6 from '../images/influences-logo-06.png'
 import Product1 from '../images/products-logo-1.png'
 import Splunk from '../images/splunk-logo.png'
 import VAS from '../images/vas-logo.png'
@@ -74,7 +74,7 @@ class Capabilities extends React.Component {
 									</ScrollAnimation>
 								</div>
 							</div>
-							<div className="row justify-content-center">
+							<div className="row justify-content-center align-items-center">
 								<div className="col-lg-9 px-0">
 									<ScrollAnimation animateIn="fadeInLeft">
 										<div className="row">
@@ -185,7 +185,7 @@ class Capabilities extends React.Component {
 									<div className="col-lg-4">
 										<div className="text-center">
 											<img
-												className="img-fluid"
+												className="img-fluid mb-3"
 												src={Influence1}
 												alt="Influence 1"
 											/>
@@ -199,7 +199,7 @@ class Capabilities extends React.Component {
 									<div className="col-lg-4">
 										<div className="text-center">
 											<img
-												className="img-fluid"
+												className="img-fluid mb-3"
 												src={Influence2}
 												alt="Influence 2"
 											/>
@@ -212,7 +212,7 @@ class Capabilities extends React.Component {
 									<div className="col-lg-4">
 										<div className="text-center">
 											<img
-												className="img-fluid"
+												className="img-fluid mb-3"
 												src={Influence3}
 												alt="Influence 3"
 											/>
@@ -230,7 +230,7 @@ class Capabilities extends React.Component {
 									<div className="col-lg-4">
 										<div className="text-center">
 											<img
-												className="img-fluid"
+												className="img-fluid mb-3"
 												src={Influence4}
 												alt="Influence 4"
 											/>
@@ -246,7 +246,7 @@ class Capabilities extends React.Component {
 									<div className="col-lg-4">
 										<div className="text-center">
 											<img
-												className="img-fluid"
+												className="img-fluid mb-3"
 												src={Influence5}
 												alt="Influence 5"
 											/>
@@ -259,7 +259,7 @@ class Capabilities extends React.Component {
 									<div className="col-lg-4">
 										<div className="text-center">
 											<img
-												className="img-fluid"
+												className="img-fluid mb-3"
 												src={Influence6}
 												alt="Influence 6"
 											/>
@@ -446,11 +446,11 @@ class Capabilities extends React.Component {
 										<p style={{ fontSize: `22px` }}>
 											Assessment of security posture of 3rd party or custom
 											developed applications across a wide range of operating
-											platforms and attack perspectives
+											platforms and attack perspectives.
 										</p>
 									</ScrollAnimation>
 								</div>
-								<div className="row ">
+								<div className="row mx-0">
 									<div className="col-lg-6">
 										<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 											<ul>
