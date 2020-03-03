@@ -316,7 +316,7 @@ class Capabilities extends React.Component {
 							<div className="row align-items-center">
 								<div className="col-lg-6">
 									<ScrollAnimation animateIn="fadeInLeft" className="h-100">
-										<ul>
+										<ul className="ml-3">
 											<li>Security & Compliance</li>
 											<li>Implementation</li>
 											<li>Operation Analytics</li>
@@ -453,7 +453,7 @@ class Capabilities extends React.Component {
 								<div className="row mx-0">
 									<div className="col-lg-6">
 										<ScrollAnimation animateIn="fadeInLeft" className="h-100">
-											<ul>
+											<ul className="ml-3">
 												<li>
 													Web Application Vulnerability Assessments/Penetration
 													Tests
