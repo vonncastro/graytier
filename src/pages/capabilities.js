@@ -351,7 +351,7 @@ class Capabilities extends React.Component {
 										</p>
 									</ScrollAnimation>
 								</div>
-								<div className="row align-items-center">
+								<div className="row mx-0 ml-3 align-items-center">
 									<div className="col-lg-6">
 										<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 											<ul>
@@ -399,18 +399,18 @@ class Capabilities extends React.Component {
 										<img
 											className="img-fluid"
 											src={PTS}
-											alt="Pentration Testing Graph"
+											alt="Penetration Testing Graph"
 										/>
 									</ScrollAnimation>
 								</div>
 								<div className="col-lg-6">
 									<ScrollAnimation animateIn="fadeRight" className="h-100">
 										<p style={{ fontSize: `22px` }}>
-											<strong>Pentration Testing (PT)</strong> − Implementation
+											<strong>Penetration Testing (PT)</strong> − Implementation
 											of proven testing methodology and lifecycle emulating
 											modern threats
 										</p>
-										<ul>
+										<ul className="ml-3">
 											<li>
 												Independent assessment of systems using perspective of
 												external malicious attacker and informed insider
@@ -499,7 +499,7 @@ class Capabilities extends React.Component {
 											Impact analysis of a successfully executed social
 											engineering campaign in a controlled environment
 										</p>
-										<ul>
+										<ul className="ml-3">
 											<li>
 												Open Source Intelligence/Information Gathering (OSINT)
 											</li>
@@ -547,7 +547,7 @@ class Capabilities extends React.Component {
 											Emulation of advanced attack profiles (e.g., nation-state,
 											highly funded criminal organization, Hacktivism)
 										</p>
-										<ul>
+										<ul className="ml-3">
 											<li>
 												Assessment of advanced defense and detection
 												capabilities
