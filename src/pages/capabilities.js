@@ -128,7 +128,7 @@ class Capabilities extends React.Component {
 						<div className="container">
 							<div className="row justify-content-center row-indent">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
-									<h1 className="mb-3"> Cyber Security Provider</h1>
+									<h1 className="mb-3">Full Stack Cyber Security Provider</h1>
 								</ScrollAnimation>
 							</div>
 							<div className="row justify-content-center row-indent">
