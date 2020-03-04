@@ -29,7 +29,6 @@ import CVE from '../images/cve.png'
 import SEAS from '../images/seas.png'
 import RTAS from '../images/rtas.png'
 import SIEMAAS from '../images/siemaas.png'
-
 class Capabilities extends React.Component {
 	render() {
 		const siteTitle = 'Capabilities'
@@ -56,7 +55,7 @@ class Capabilities extends React.Component {
 					<section id="who-are-we" className="mb-5">
 						<div className="container">
 							<div className="row justify-content-center">
-								<div className="col-md-12">
+								<div className="col-lg-12 col-md-12">
 									<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 										<h1 className="mb-3">Who are we ...</h1>
 										<h3>Primary Area of Expertise:</h3>
@@ -74,11 +73,11 @@ class Capabilities extends React.Component {
 									</ScrollAnimation>
 								</div>
 							</div>
-							<div className="row justify-content-center align-items-center">
-								<div className="col-lg-9 px-0">
+							<div className="row justify-content-center align-items-center row-logos">
+								<div className="col-lg-9 col-md-7 px-0">
 									<ScrollAnimation animateIn="fadeInLeft">
 										<div className="row">
-											<div className="col-lg-12 px-0">
+											<div className="col xl-12 col-lg-6 col-md-6 px-0">
 												<img
 													className="img-fluid partner-logo"
 													src={JSP}
@@ -95,7 +94,7 @@ class Capabilities extends React.Component {
 													alt="US Department of Homeland Security"
 												/>
 											</div>
-											<div className="offset-lg-2 col-lg-10 px-0">
+											<div className="col xl-10 offset-xl-2 col-lg-6 col-md-6 px-0">
 												<img
 													className="img-fluid partner-logo"
 													src={USCyberCommand}
@@ -110,7 +109,7 @@ class Capabilities extends React.Component {
 										</div>
 									</ScrollAnimation>
 								</div>
-								<div className="col-lg-3 px-0 align-items-end">
+								<div className="col-lg-3 col-md-5 px-0 align-items-end">
 									<ScrollAnimation animateIn="fadeInRight">
 										<img
 											className="img-fluid partner-logo"
@@ -127,13 +126,13 @@ class Capabilities extends React.Component {
 					</section>
 					<section id="full-stack-cyber" className="my-5">
 						<div className="container">
-							<div className="row justify-content-center">
+							<div className="row justify-content-center row-indent">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
-									<h1 className="mb-3">Full Stack Cyber Security Provider</h1>
+									<h1 className="mb-3"> Cyber Security Provider</h1>
 								</ScrollAnimation>
 							</div>
-							<div className="row justify-content-center">
-								<div className="col-lg-2">
+							<div className="row justify-content-center row-indent">
+								<div className="col-lg-2 col-md-6 order-lg-1 order-md-2">
 									<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 										<ul className="mb-5">
 											<li>Penetration Testing</li>
@@ -148,10 +147,10 @@ class Capabilities extends React.Component {
 										</ul>
 									</ScrollAnimation>
 								</div>
-								<div className="col-lg-8 d-flex align-items-center">
+								<div className="col-lg-8 col-md-12 order-lg-2 order-md-1 d-flex align-items-center">
 									<img className="img-fluid" src={FSCSP} alt="FSCSP Graph" />
 								</div>
-								<div className="col-lg-2">
+								<div className="col-lg-2 col-md-6 order-lg-3 order-md-2">
 									<ScrollAnimation animateIn="fadeInRight" className="h-100">
 										<ul className="mb-5">
 											<li>Incident Handling</li>
@@ -182,7 +181,7 @@ class Capabilities extends React.Component {
 							</div>
 							<ScrollAnimation animateIn="fadeInRight" className="h-100">
 								<div className="row justify-content-center my-5">
-									<div className="col-lg-4">
+									<div className="col-lg-4 col-md-4">
 										<div className="text-center">
 											<img
 												className="img-fluid mb-3"
@@ -196,7 +195,7 @@ class Capabilities extends React.Component {
 											</p>
 										</div>
 									</div>
-									<div className="col-lg-4">
+									<div className="col-lg-4 col-md-4">
 										<div className="text-center">
 											<img
 												className="img-fluid mb-3"
@@ -209,7 +208,7 @@ class Capabilities extends React.Component {
 											</p>
 										</div>
 									</div>
-									<div className="col-lg-4">
+									<div className="col-lg-4 col-md-4">
 										<div className="text-center">
 											<img
 												className="img-fluid mb-3"
@@ -227,7 +226,7 @@ class Capabilities extends React.Component {
 							</ScrollAnimation>
 							<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 								<div className="row justify-content-center my-5">
-									<div className="col-lg-4">
+									<div className="col-lg-4 col-md-4">
 										<div className="text-center">
 											<img
 												className="img-fluid mb-3"
@@ -243,7 +242,7 @@ class Capabilities extends React.Component {
 											</p>
 										</div>
 									</div>
-									<div className="col-lg-4">
+									<div className="col-lg-4 col-md-4">
 										<div className="text-center">
 											<img
 												className="img-fluid mb-3"
@@ -256,7 +255,7 @@ class Capabilities extends React.Component {
 											</p>
 										</div>
 									</div>
-									<div className="col-lg-4">
+									<div className="col-lg-4 col-md-4">
 										<div className="text-center">
 											<img
 												className="img-fluid mb-3"
@@ -278,12 +277,12 @@ class Capabilities extends React.Component {
 								</ScrollAnimation>
 							</div>
 							<div className="row align-items-center">
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 										<img className="img-fluid" src={Product1} alt="Product 6" />
 									</ScrollAnimation>
 								</div>
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeInRight" className="h-100">
 										<p style={{ fontSize: `22px` }}>
 											Skillwerks is an on demand assessment platform to
@@ -314,7 +313,7 @@ class Capabilities extends React.Component {
 								</div>
 							</div>
 							<div className="row align-items-center">
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 										<ul className="ml-3">
 											<li>Security & Compliance</li>
@@ -326,7 +325,7 @@ class Capabilities extends React.Component {
 										</ul>
 									</ScrollAnimation>
 								</div>
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeInRight" className="h-100">
 										<img className="img-fluid" src={Splunk} alt="Splunk Logo" />
 									</ScrollAnimation>
@@ -336,13 +335,13 @@ class Capabilities extends React.Component {
 					</section>
 					<section id="vas" className="page-content">
 						<div className="container">
-							<div className="row justify-content-center">
+							<div className="row justify-content-center row-logos">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
 									<h1 className="mb-3">Vulnerability Assessments Solutions</h1>
 								</ScrollAnimation>
 							</div>
 							<div className="row">
-								<div className="col-lg-12">
+								<div className="col-lg-12 col-md-12">
 									<ScrollAnimation animateIn="fadeIn" className="h-100">
 										<p style={{ fontSize: `22px` }}>
 											<strong>Vulnerability Assessments (VA)</strong> −
@@ -352,7 +351,7 @@ class Capabilities extends React.Component {
 									</ScrollAnimation>
 								</div>
 								<div className="row mx-0 ml-3 align-items-center">
-									<div className="col-lg-6">
+									<div className="col-lg-6 col-md-6">
 										<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 											<ul>
 												<li>
@@ -370,7 +369,7 @@ class Capabilities extends React.Component {
 											</ul>
 										</ScrollAnimation>
 									</div>
-									<div className="col-lg-6">
+									<div className="col-lg-6 col-md-6">
 										<ScrollAnimation animateIn="fadeInRight" className="h-100">
 											<div className="d-flex ml-5">
 												<img className="img-fluid w-50" src={VAS} alt="VAS" />
@@ -388,13 +387,13 @@ class Capabilities extends React.Component {
 					</section>
 					<section id="pts" className="page-content">
 						<div className="container">
-							<div className="row justify-content-center">
+							<div className="row justify-content-center row-logos">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
 									<h1 className="mb-3">Penetration Testing Solution</h1>
 								</ScrollAnimation>
 							</div>
 							<div className="row align-items-center">
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeLeft" className="h-100">
 										<img
 											className="img-fluid"
@@ -403,7 +402,7 @@ class Capabilities extends React.Component {
 										/>
 									</ScrollAnimation>
 								</div>
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeRight" className="h-100">
 										<p style={{ fontSize: `22px` }}>
 											<strong>Penetration Testing (PT)</strong> − Implementation
@@ -433,7 +432,7 @@ class Capabilities extends React.Component {
 					</section>
 					<section id="assa" className="page-content">
 						<div className="container">
-							<div className="row justify-content-center">
+							<div className="row justify-content-center row-logos">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
 									<h1 className="mb-3">
 										Application Security Assessments Solution
@@ -441,7 +440,7 @@ class Capabilities extends React.Component {
 								</ScrollAnimation>
 							</div>
 							<div className="row align-items-center">
-								<div className="col-lg-12">
+								<div className="col-lg-12 col-md-12">
 									<ScrollAnimation animateIn="fadeIn" className="h-100">
 										<p style={{ fontSize: `22px` }}>
 											Assessment of security posture of 3rd party or custom
@@ -451,7 +450,7 @@ class Capabilities extends React.Component {
 									</ScrollAnimation>
 								</div>
 								<div className="row mx-0">
-									<div className="col-lg-6">
+									<div className="col-lg-6 col-md-6">
 										<ScrollAnimation animateIn="fadeInLeft" className="h-100">
 											<ul className="ml-3">
 												<li>
@@ -468,7 +467,7 @@ class Capabilities extends React.Component {
 											</p>
 										</ScrollAnimation>
 									</div>
-									<div className="col-lg-6">
+									<div className="col-lg-6 col-md-6 img-center">
 										<ScrollAnimation animateIn="fadeInRight" className="h-100">
 											<div className="ml-5">
 												<img
@@ -485,7 +484,7 @@ class Capabilities extends React.Component {
 					</section>
 					<section id="seas" className="page-content">
 						<div className="container">
-							<div className="row justify-content-center">
+							<div className="row justify-content-center row-logos">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
 									<h1 className="mb-3">
 										Social Engineer Assessments Solutions
@@ -493,7 +492,7 @@ class Capabilities extends React.Component {
 								</ScrollAnimation>
 							</div>
 							<div className="row align-items-center">
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeLeft" className="h-100">
 										<p style={{ fontSize: `22px` }}>
 											Impact analysis of a successfully executed social
@@ -512,7 +511,7 @@ class Capabilities extends React.Component {
 										</ul>
 									</ScrollAnimation>
 								</div>
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeRight" className="h-100">
 										<img
 											className="img-fluid"
@@ -524,15 +523,15 @@ class Capabilities extends React.Component {
 							</div>
 						</div>
 					</section>
-					<section id="pts" className="page-content">
+					<section id="rtas" className="page-content">
 						<div className="container">
-							<div className="row justify-content-center">
+							<div className="row justify-content-center row-logos">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
 									<h1 className="mb-3">Red Team Assessments Solutions</h1>
 								</ScrollAnimation>
 							</div>
 							<div className="row align-items-center">
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6">
 									<ScrollAnimation animateIn="fadeLeft" className="h-100">
 										<img
 											className="img-fluid"
@@ -541,7 +540,7 @@ class Capabilities extends React.Component {
 										/>
 									</ScrollAnimation>
 								</div>
-								<div className="col-lg-6">
+								<div className="col-lg-6 col-md-6 order-2">
 									<ScrollAnimation animateIn="fadeRight" className="h-100">
 										<p style={{ fontSize: `22px` }}>
 											Emulation of advanced attack profiles (e.g., nation-state,
@@ -560,7 +559,7 @@ class Capabilities extends React.Component {
 					</section>
 					<section id="siemaas" className="page-content">
 						<div className="container">
-							<div className="row justify-content-center">
+							<div className="row justify-content-center row-logos">
 								<ScrollAnimation animateIn="fadeIn" className="h-100">
 									<h1 className="mb-3">
 										Security Information and Event Management as a Service
