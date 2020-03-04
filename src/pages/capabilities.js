@@ -77,7 +77,7 @@ class Capabilities extends React.Component {
 								<div className="col-lg-9 col-md-7 px-0">
 									<ScrollAnimation animateIn="fadeInLeft">
 										<div className="row">
-											<div className="col xl-12 col-lg-6 col-md-6 px-0">
+											<div className="col-xl-12 col-md-6 px-0">
 												<img
 													className="img-fluid partner-logo"
 													src={JSP}
@@ -94,7 +94,7 @@ class Capabilities extends React.Component {
 													alt="US Department of Homeland Security"
 												/>
 											</div>
-											<div className="col xl-10 offset-xl-2 col-lg-6 col-md-6 px-0">
+											<div className="col-xl-10 offset-xl-2 col-md-6 px-0">
 												<img
 													className="img-fluid partner-logo"
 													src={USCyberCommand}

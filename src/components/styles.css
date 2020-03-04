@@ -1010,9 +1010,9 @@ ul.blog-nav li {
 
 @media (max-width: 425px) {
 	/* WHO ARE WE SECTION */
-	.row-logos .col-lg-12,
-	.offset-lg-2,
-	.col-lg-3 {
+	.row-logos .col-xl-12,
+	.offset-xl-2,
+	.col-xl-3 {
 		text-align: center !important;
 	}
 
