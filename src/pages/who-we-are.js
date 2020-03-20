@@ -309,7 +309,7 @@ class whoWeArePage extends React.Component {
                             <Link
                               className="btn btn-primary"
                               role="button"
-                              to="/public-sector"
+                              to="/military-federal"
                             >
                               Read More
                             </Link>

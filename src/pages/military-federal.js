@@ -34,6 +34,25 @@ class PublicSectorPage extends React.Component {
             </div>
           </div>
         </div>
+
+        <div className="page-content">
+          <div className="container">
+            <ScrollAnimation animateIn="fadeIn">
+              <h2 className="font-weight-bold mb-3 text-center">
+                Gray Tier's Philosophy
+              </h2>
+              <div className="h-100 mt-4 text-center">
+                <p>Compliance does not mean SECURITY</p>
+                <p>
+                  Compliance just a snapshot of your security program to a
+                  specific framework's set of security requirements at a given
+                  moment in time.
+                </p>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+
         <div className="page-content bg-light">
           <div className="container">
             <div className="row justify-content-center">
@@ -59,6 +78,19 @@ class PublicSectorPage extends React.Component {
                         impressive track record with military entities,
                         intelligence organizations, and Fortune 500 companies.
                       </p>
+                      <p>
+                        Gray Tiers is a verified{' '}
+                        <a
+                          href="https://www.vip.vetbiz.va.gov/Search/BusinessProfile/5bbb3258-766a-e811-9445-0050568df19d"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Service Disabled Veteran Owned Small Business (SDVOSB)
+                        </a>{' '}
+                        and is eligible to be your sole-source provider of these
+                        solutions. Research some of our areas of expertise in
+                        more detail below.
+                      </p>
                     </div>
                   </div>
                 </ScrollAnimation>
@@ -66,7 +98,77 @@ class PublicSectorPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="page-content">
+        <div className="page-content" id="complianceSection">
+          <div className="container">
+            <ScrollAnimation animateIn="fadeIn">
+              <h2 className="font-weight-bold mb-3 text-center">
+                For Government and Defense Customers
+              </h2>
+              <p>
+                Gray Tier's primary characterization is offensive cyber
+                operations (OCO) with a specialization in defensive
+                cybersecurity operations (DCO), NIST Risk Management Framework
+                (RMF) support, and FISMA compliance. We provide solutions in
+                areas such as Assessment and Authorization (A&A), Security
+                Engineering, and Information Systems Security Officer (ISSO) to
+                support and develop custom software applications to enhance and
+                automate these functions.
+              </p>
+              <p>
+                Our team is thoroughly vetted, security-cleared and certified up
+                to DoD 8570.01-m IAT, IAM and IASAE Level III levels I through
+                III.
+              </p>
+              <h2 className="font-weight-bold mb-3 text-center">
+                Our Cybersecurity Solutions Include
+              </h2>
+
+              <ul>
+                <li>PCI, FISMA, and NIST Compliance</li>
+                <li>RMF Assessment & Authorization (A&A)</li>
+                <li>Independent Risk and Vulnerability Assessments (IV&V)</li>
+                <li>Penetration Testing</li>
+                <li>HVA & RVA Assessments</li>
+                <li>24/7/365 Managed Security Services Provider</li>
+                <li>Intrusion Detection & Prevention</li>
+                <li>Cyber Forensics & Incident Response</li>
+                <li>Cybersecurity Engineering & Advisory</li>
+                <li>IAVM & ISVM announcements</li>
+              </ul>
+              <p>
+                Failure to meet the requirements of FISMA could result in budget
+                cuts to an agency or termination from a contract for a private
+                government contractor.
+              </p>
+            </ScrollAnimation>
+          </div>
+        </div>
+        <div className="page-content bg-light">
+          <div className="container">
+            <ScrollAnimation animateIn="fadeIn">
+              <h2 className="font-weight-bold mb-3 text-center">
+                RMF, A&A, & FISMA
+              </h2>
+              <p>
+                Gray Tier's past performance in the validation and assessment of
+                systems and enclaves worldwide, both classified and
+                unclassified, in accordance with the NIST Risk Management
+                Framework (RMF) and the Federal Information Security Management
+                Act (FISMA).
+              </p>
+              <p>
+                Gray Tier provides top tier security engineering solutions to
+                ensure compliance with RMF and FISMA in accordance with NIST
+                800-53 controls and to achieve a full Authorization to Operate
+                (ATO). Our team performs over 150 such engagements each year to
+                ensure the security and compliance of federal and defense
+                information technology, weapons, ashore/afloat, and industrial
+                control systems.
+              </p>
+            </ScrollAnimation>
+          </div>
+        </div>
+        <div className="page-content" id="contracts">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-9">

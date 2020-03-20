@@ -64,6 +64,24 @@ export default () => (
           </Collapsible>
         </li>
         <li>
+          <Collapsible
+            trigger={
+              <Link title="Military & Federal" to="/military-federal">
+                Military & Federal
+              </Link>
+            }
+          >
+            <ul className="submenu">
+              <li>
+                <Link to="/military-federal#contracts">Contracts</Link>
+              </li>
+              <li>
+                <Link to="/military-federal#complianceSection">Compliance</Link>
+              </li>
+            </ul>
+          </Collapsible>
+        </li>
+        <li>
           <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
