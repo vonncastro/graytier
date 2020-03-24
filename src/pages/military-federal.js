@@ -9,7 +9,7 @@ import Overview from '../components/overview'
 
 class PublicSectorPage extends React.Component {
   render() {
-    const siteTitle = 'Public Sector'
+    const siteTitle = 'Military & Federal'
     const siteDescription = this.props.data.site.siteMetadata.description
 
     return (
@@ -21,7 +21,7 @@ class PublicSectorPage extends React.Component {
             <div className="row justify-content-center">
               <div className="col-md-9">
                 <ScrollAnimation animateIn="fadeInDown" duration="2">
-                  <h1 className="font-weight-bold">Public Sector</h1>
+                  <h1 className="font-weight-bold">Military & Federal</h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" delay="1000">
                   <h5 className="pt-3 font-weight-lighter text-white">
@@ -60,23 +60,24 @@ class PublicSectorPage extends React.Component {
                 <ScrollAnimation animateIn="fadeIn">
                   <div className="content text-center">
                     <h2 className="mb-4">
-                      Meet Gray Tier’s Public Sector Team
+                      Meet Gray Tier’s Military & Federal Team
                     </h2>
                     <div className="h-100">
                       <p>
-                        Gray Tier’s public sector team provides a wide range of
-                        professional government cyber security services to many
-                        departments and agencies. We work with many government
-                        clients, including those that execute critical cyber
-                        operations in national and homeland security. We also
-                        work with government-funded research institutions. Gray
-                        Tier is uniquely qualified to help public sector
-                        entities prevent and minimize cyber risks. Our team has
-                        the strategic and operational experience to effectively
-                        assist government organizations with their cyber
-                        security needs. Our experts who have developed an
-                        impressive track record with military entities,
-                        intelligence organizations, and Fortune 500 companies.
+                        Gray Tier’s Military & Federal team provides a wide
+                        range of professional government cyber security services
+                        to many departments and agencies. We work with many
+                        government clients, including those that execute
+                        critical cyber operations in national and homeland
+                        security. We also work with government-funded research
+                        institutions. Gray Tier is uniquely qualified to help
+                        Military & Federal entities prevent and minimize cyber
+                        risks. Our team has the strategic and operational
+                        experience to effectively assist government
+                        organizations with their cyber security needs. Our
+                        experts who have developed an impressive track record
+                        with military entities, intelligence organizations, and
+                        Fortune 500 companies.
                       </p>
                       <p>
                         Gray Tiers is a verified{' '}
@@ -258,8 +259,8 @@ class PublicSectorPage extends React.Component {
                 </p>
                 <p>
                   As insider threats (i.e., malicious or negligent employees)
-                  can also be a major concern for public sector entities, we
-                  deliver services directed at managing the human element of
+                  can also be a major concern for Military & Federal entities,
+                  we deliver services directed at managing the human element of
                   security. Gray Tier offers cyber security training and
                   awareness courses for all levels of digital expertise.
                 </p>
@@ -324,7 +325,7 @@ class PublicSectorPage extends React.Component {
                 <h2 className="font-weight-bold mb-3">
                   Protecting Government Data with Comprehensive Cyber Defenses
                 </h2>
-                <h4>Public Sector Breach Response Services</h4>
+                <h4>Military & Federal Breach Response Services</h4>
               </div>
 
               <div className="h-100 mt-4">
@@ -365,7 +366,7 @@ class PublicSectorPage extends React.Component {
           <div className="container">
             <ScrollAnimation animateIn="fadeIn">
               <h2 className="font-weight-bold mb-3 text-center">
-                Multi-Faceted Cyber Security Issues Impact Public Sector
+                Multi-Faceted Cyber Security Issues Impact Military & Federal
               </h2>
               <p>
                 Government organizations across the globe must protect and
@@ -379,7 +380,7 @@ class PublicSectorPage extends React.Component {
               <p>
                 Most organizations recognize the threat of a foreign entity
                 gaining access to state secrets or defense matters. There are a
-                myriad of other cyber threats facing public sector
+                myriad of other cyber threats facing Military & Federal
                 organizations, however. For one, countries are actively
                 exfiltrating intellectual property. This not only damages the
                 competitive advantage of private companies, but it can also
@@ -434,12 +435,12 @@ class PublicSectorPage extends React.Component {
           <div className="container">
             <ScrollAnimation animateIn="fadeIn">
               <h2 className="font-weight-bold mb-3 text-center">
-                Public Sector Compliance – FISMA Overview
+                Military & Federal Compliance – FISMA Overview
               </h2>
               <div className="h-100 mt-4">
                 <p>
-                  In the US, the most important cyber regulation in the public
-                  sector is the Federal Information Security Management Act (
+                  In the US, the most important cyber regulation in the Military
+                  & Federal is the Federal Information Security Management Act (
                   <a
                     href="https://www.dhs.gov/fisma"
                     target="_blank"
@@ -528,7 +529,7 @@ class PublicSectorPage extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Cyber Security Assessments for the Public Sector
+                      Cyber Security Assessments for the Military & Federal
                     </a>
                   </div>
                   {/*} <div className="col-md-3">
