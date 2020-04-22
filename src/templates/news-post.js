@@ -7,6 +7,14 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 import HeroParticles from '../components/particles'
 import { rhythm } from '../utils/typography'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from 'react-share'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -83,6 +91,25 @@ class BlogPostTemplate extends React.Component {
                     )}
                   </li>
                 </ul>
+                <h6>Share to:</h6>
+                <FacebookShareButton
+                  className="mr-3"
+                  url={url + post.slug.current}
+                >
+                  <FacebookIcon />
+                </FacebookShareButton>
+                <LinkedinShareButton
+                  className="mr-3"
+                  url={url + post.slug.current}
+                >
+                  <LinkedinIcon />
+                </LinkedinShareButton>
+                <TwitterShareButton
+                  className="mr-3"
+                  url={url + post.slug.current}
+                >
+                  <TwitterIcon />
+                </TwitterShareButton>
                 <div className="text-center mt-5">
                   <Link className="btn btn-primary" role="button" to="/news">
                     Back to News
