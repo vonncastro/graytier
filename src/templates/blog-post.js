@@ -96,19 +96,19 @@ class BlogPostTemplate extends React.Component {
                 <h6>Share to:</h6>
                 <FacebookShareButton
                   className="mr-3"
-                  url={`https://www.graytier.com/${post.slug.current}`}
+                  url={url + post.slug.current}
                 >
                   <FacebookIcon />
                 </FacebookShareButton>
                 <LinkedinShareButton
                   className="mr-3"
-                  url={`https://www.graytier.com/${post.slug.current}`}
+                  url={url + post.slug.current}
                 >
                   <LinkedinIcon />
                 </LinkedinShareButton>
                 <TwitterShareButton
                   className="mr-3"
-                  url={`https://www.graytier.com/${post.slug.current}`}
+                  url={url + post.slug.current}
                 >
                   <TwitterIcon />
                 </TwitterShareButton>

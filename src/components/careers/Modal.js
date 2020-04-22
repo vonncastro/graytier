@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Modal, ModalBody } from 'react'
+import { Button, Modal, ModalBody } from 'reactstrap'
 
 const JobLocations = props => {
   const { className } = props
