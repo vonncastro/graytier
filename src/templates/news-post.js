@@ -31,6 +31,7 @@ class BlogPostTemplate extends React.Component {
     //     ),
     //   },
     // }
+    let url = 'https://www.graytier.com/'
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.title} description={post.excerpt} />
