@@ -7,6 +7,14 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import 'animate.css/animate.min.css'
 import HeroParticles from '../components/particles'
 import { rhythm } from '../utils/typography'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from 'react-share'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -22,6 +30,7 @@ class BlogPostTemplate extends React.Component {
     //     ),
     //   },
     // }
+    let url = 'https://www.graytier.com/'
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.title} description={post.excerpt} />
@@ -84,6 +93,25 @@ class BlogPostTemplate extends React.Component {
                     )}
                   </li>
                 </ul>
+                <h6>Share to:</h6>
+                <FacebookShareButton
+                  className="mr-3"
+                  url={`https://www.graytier.com/${post.slug.current}`}
+                >
+                  <FacebookIcon />
+                </FacebookShareButton>
+                <LinkedinShareButton
+                  className="mr-3"
+                  url={`https://www.graytier.com/${post.slug.current}`}
+                >
+                  <LinkedinIcon />
+                </LinkedinShareButton>
+                <TwitterShareButton
+                  className="mr-3"
+                  url={`https://www.graytier.com/${post.slug.current}`}
+                >
+                  <TwitterIcon />
+                </TwitterShareButton>
                 <div className="text-center mt-5">
                   <Link className="btn btn-primary" role="button" to="/blog">
                     Back to the Blog

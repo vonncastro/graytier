@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Modal, ModalBody } from 'reactstrap'
+import { Button, Modal, ModalBody } from 'react'
 
 const JobLocations = props => {
   const { className } = props
@@ -25,7 +25,7 @@ const JobLocations = props => {
             allow="microphone; camera"
             src="https://gray-tier-technologies.breezy.hr/embed/positions?bzsrc=true&amp;include_filters=true&amp;link_external=true&amp;no_pos_msg=true&amp;p=https://www.graytier.com/careers/job-postings/"
             height="350"
-          ></iframe>
+          />
         </ModalBody>
       </Modal>
     </div>

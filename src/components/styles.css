@@ -1150,3 +1150,7 @@ ul.blog-nav li {
 		margin-top: 10px !important;
 	}
 }
+
+.social a {
+	padding: 0 0.5em;
+}
