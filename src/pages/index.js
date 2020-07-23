@@ -28,7 +28,7 @@ import marked from 'marked'
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const siteTitle = 'Penetration Testing Company & Enterprise Cyber Security'
     const siteDescription = this.props.data.site.siteMetadata.description
     const { data } = this.props
     const posts = data.allSanityPost.edges

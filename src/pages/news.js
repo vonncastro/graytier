@@ -10,7 +10,7 @@ import marked from 'marked'
 class NewsIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = 'News'
+    const siteTitle = 'Penetration Testing & Enterprise Cyber Security News'
     const posts = data.allSanityNews.edges
 
     console.log(this.props)

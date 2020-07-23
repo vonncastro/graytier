@@ -20,7 +20,7 @@ import NCCIC from '../images/nccic.png'
 
 class PartnersPage extends React.Component {
   render() {
-    const siteTitle = 'Partners'
+    const siteTitle = 'Our Enterprise Cyber Security Partners - Gray Tier'
     const siteDescription = this.props.data.site.siteMetadata.description
 
     return (

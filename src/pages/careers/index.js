@@ -8,7 +8,8 @@ import HeroParticles from '../../components/particles'
 
 class CareersPage extends React.Component {
   render() {
-    const siteTitle = 'Careers'
+    const siteTitle =
+      'Penetration Testing & Cyber Security Careers at Gray Tier'
     const siteDescription = this.props.data.site.siteMetadata.description
 
     return (

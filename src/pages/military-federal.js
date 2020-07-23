@@ -9,7 +9,8 @@ import Overview from '../components/overview'
 
 class PublicSectorPage extends React.Component {
   render() {
-    const siteTitle = 'Military & Federal'
+    const siteTitle =
+      'Government & Military Penetration Testing & Cyber Security'
     const siteDescription = this.props.data.site.siteMetadata.description
 
     return (

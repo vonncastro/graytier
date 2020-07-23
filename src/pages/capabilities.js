@@ -31,7 +31,7 @@ import RTAS from '../images/rtas.png'
 import SIEMAAS from '../images/siemaas.png'
 class Capabilities extends React.Component {
 	render() {
-		const siteTitle = 'Capabilities'
+		const siteTitle = 'Commercial Penetration Testing & Cyber Security'
 		const siteDescription = this.props.data.site.siteMetadata.description
 
 		return (
@@ -44,7 +44,8 @@ class Capabilities extends React.Component {
 							<div className="col-md-9">
 								<ScrollAnimation animateIn="fadeInDown" duration="2">
 									<h1 className="font-weight-bold">
-										Cyber Security: <br /> Capabilities
+										Enterprise Cyber Security <br /> & Penetration Testing
+										Experts
 									</h1>
 								</ScrollAnimation>
 							</div>

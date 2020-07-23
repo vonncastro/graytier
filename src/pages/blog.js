@@ -10,7 +10,7 @@ import marked from 'marked'
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = 'Blog'
+    const siteTitle = 'Enterprise Penetration Testing & Cyber Security Blog'
     const posts = data.allSanityPost.edges
 
     console.log(this.props)

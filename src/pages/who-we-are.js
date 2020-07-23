@@ -17,7 +17,7 @@ import Compliance from '../images/compliance.png'
 
 class whoWeArePage extends React.Component {
   render() {
-    const siteTitle = 'Who We Are'
+    const siteTitle = 'We Are Penetration Testing Experts - Gray Tier'
     const siteDescription = this.props.data.site.siteMetadata.description
 
     return (

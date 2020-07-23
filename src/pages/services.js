@@ -16,7 +16,7 @@ import SocialEngineering from '../images/social-engineering.png'
 
 class ServicesPage extends React.Component {
   render() {
-    const siteTitle = 'Services'
+    const siteTitle = 'Corporate, Healthcare, & Financial Penetration Testing'
     const siteDescription = this.props.data.site.siteMetadata.description
 
     return (
@@ -28,7 +28,9 @@ class ServicesPage extends React.Component {
             <div className="row justify-content-center">
               <div className="col-md-9">
                 <ScrollAnimation animateIn="fadeInDown" duration="2">
-                  <h1 className="font-weight-bold">Services</h1>
+                  <h1 className="font-weight-bold" tag="">
+                    Penetration Testing & Cyber Security Services
+                  </h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" delay="1000">
                   <h5 className="pt-3 font-weight-lighter text-white">

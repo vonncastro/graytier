@@ -10,7 +10,7 @@ import sdvosb from '../images/sdvosb-logo.png'
 
 class AboutPage extends React.Component {
   render() {
-    const siteTitle = 'About'
+    const siteTitle = 'About Gray Tier Technologies - Cyber Threat Protection'
     const siteDescription = this.props.data.site.siteMetadata.description
 
     return (

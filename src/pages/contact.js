@@ -9,7 +9,8 @@ import HeroParticles from '../components/particles'
 
 class ContactPage extends React.Component {
 	render() {
-		const siteTitle = 'Contact'
+		const siteTitle =
+			'Contact Gray Tier For Penetration Testing & Cyber Security'
 		const siteDescription = this.props.data.site.siteMetadata.description
 
 		return (
