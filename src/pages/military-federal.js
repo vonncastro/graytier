@@ -7,6 +7,11 @@ import 'animate.css/animate.min.css'
 import HeroParticles from '../components/particles'
 import Overview from '../components/overview'
 
+import csa from '../images/Gray_Tier_Tech_Capability-Statement-1.png'
+import ir from '../images/Gray_Tier_Tech_IR-1.png'
+import vps from '../images/Gray_Tier_Tech_VPS-1.png'
+import cyhy from '../images/Gray-Tier-Tech-CyHy.png'
+
 class PublicSectorPage extends React.Component {
   render() {
     const siteTitle =
@@ -519,16 +524,13 @@ class PublicSectorPage extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
-                        className="img-fluid mb-3"
-                        src="Gray_Tier_Tech_Capability-Statement-1.png"
-                        alt=""
-                      />
+                      <img className="img-fluid mb-3" src={csa} alt="" />
                     </a>
                     <a
                       href="/Gray_Tier_Tech_Capability-Statement.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
+                      download
                     >
                       Cyber Security Assessments for the Military & Federal
                     </a>
@@ -559,16 +561,13 @@ class PublicSectorPage extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
-                        className="img-fluid mb-3"
-                        src="Gray_Tier_Tech_IR-1.png"
-                        alt=""
-                      />
+                      <img className="img-fluid mb-3" src={ir} alt="" />
                     </a>
                     <a
                       href="/Gray_Tier_Tech_IR.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
+                      download
                     >
                       Incident Response
                     </a>
@@ -579,18 +578,32 @@ class PublicSectorPage extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
-                        className="img-fluid mb-3"
-                        src="/Gray_Tier_Tech_VPS-1.png"
-                        alt=""
-                      />
+                      <img className="img-fluid mb-3" src={vps} alt="" />
                     </a>
                     <a
                       href="/Gray_Tier_Tech_VPS.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
+                      download
                     >
                       Penetration Testing
+                    </a>
+                  </div>
+                  <div className="col-md-3">
+                    <a
+                      href="/Gray_Tier_Tech_CyHy.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img className="img-fluid mb-3" src={cyhy} alt="" />
+                    </a>
+                    <a
+                      href="/Gray_Tier_Tech_CyHy.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      download
+                    >
+                      Gray Tier CyHy (Cyber Hygiene)
                     </a>
                   </div>
                 </div>
