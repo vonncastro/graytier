@@ -590,40 +590,6 @@ class PublicSectorPage extends React.Component {
                       Penetration Testing
                     </a>
                   </div>
-                  <div className="col-md-3">
-                    <a
-                      href="/Gray_Tier_Tech_CyHy.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img className="img-fluid mb-3" src={cyhy} alt="" />
-                    </a>
-                    <a
-                      href="/Gray_Tier_Tech_CyHy.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      download
-                    >
-                      Gray Tier CyHy (Cyber Hygiene)
-                    </a>
-                  </div>
-                  <div className="col-md-3 mt-3">
-                    <a
-                      href="/Gray_Tier_Tech_Int.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img className="img-fluid mb-3" src={int} alt="" />
-                    </a>
-                    <a
-                      href="/Gray_Tier_Tech_Int.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      download
-                    >
-                      Insider Threat (InT)
-                    </a>
-                  </div>
                 </div>
               </div>
             </ScrollAnimation>
