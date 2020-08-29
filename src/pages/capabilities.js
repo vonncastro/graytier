@@ -28,6 +28,8 @@ import PTS from '../images/pts.png'
 import CVE from '../images/cve.png'
 import SEAS from '../images/seas.png'
 import RTAS from '../images/rtas.png'
+import insiderthreat from '../images/InsiderThreat.png'
+import cyhy from '../images/cyhy-wheel.png'
 import SIEMAAS from '../images/siemaas.png'
 class Capabilities extends React.Component {
 	render() {
@@ -462,7 +464,7 @@ class Capabilities extends React.Component {
 												<li>Application Vulnerability Assessments</li>
 												<li>Vulnerability Research & Exploit Development</li>
 											</ul>
-											<p>
+											<p style={{ fontSize: `22px` }}>
 												Credited with over 15 CVEs for discovered
 												vulnerabilities
 											</p>
@@ -552,6 +554,78 @@ class Capabilities extends React.Component {
 												Assessment of advanced defense and detection
 												capabilities
 											</li>
+										</ul>
+									</ScrollAnimation>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="insiderthreat" className="page-content">
+						<div className="container">
+							<div className="row justify-content-center row-logos">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<h1 className="mb-3">Insider Threat Program</h1>
+								</ScrollAnimation>
+							</div>
+							<div className="row align-items-center">
+								<div className="col-lg-6 col-md-6">
+									<ScrollAnimation animateIn="fadeLeft" className="h-100">
+										<img
+											className="img-fluid"
+											src={insiderthreat}
+											alt="Red Team Assessments Solutions"
+										/>
+									</ScrollAnimation>
+								</div>
+								<div className="col-lg-6 col-md-6 order-2">
+									<ScrollAnimation animateIn="fadeRight" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											Identifies potential ways an insider could threaten your
+											organization
+										</p>
+										<ul className="ml-3">
+											<li>Know what is at stake</li>
+											<li>Align insider threat with business continuity</li>
+											<li>Know your critical systems</li>
+											<li>Trust but verify</li>
+											<li>Prevent breaches</li>
+										</ul>
+									</ScrollAnimation>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="cyhy" className="page-content">
+						<div className="container">
+							<div className="row justify-content-center row-logos">
+								<ScrollAnimation animateIn="fadeIn" className="h-100">
+									<h1 className="mb-3">Cyber Hygiene (CyHy)</h1>
+								</ScrollAnimation>
+							</div>
+							<div className="row align-items-center">
+								<div className="col-lg-6 col-md-6">
+									<ScrollAnimation animateIn="fadeLeft" className="h-100">
+										<img
+											className="img-fluid"
+											src={cyhy}
+											alt="Red Team Assessments Solutions"
+										/>
+									</ScrollAnimation>
+								</div>
+								<div className="col-lg-6 col-md-6 order-2">
+									<ScrollAnimation animateIn="fadeRight" className="h-100">
+										<p style={{ fontSize: `22px` }}>
+											Gray Tier’s own developed variety of proactive services
+											which evaluates an organization’s external security
+											posture
+										</p>
+										<ul className="ml-3">
+											<li>
+												Open Source Intelligence/Information Gathering (OSINT)
+											</li>
+											<li>Spear-Phishing, Pretexting Campaigns</li>
+											<li>Continual Vulnerability Identification</li>
+											<li>Dark Web, Credential Leaks, Domain Masquerading</li>
 										</ul>
 									</ScrollAnimation>
 								</div>

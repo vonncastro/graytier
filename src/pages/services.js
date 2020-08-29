@@ -13,6 +13,17 @@ import ApplicationTesting from '../images/application-testing.png'
 import WebApplicationTesting from '../images/web-application-testing.png'
 import OpenSourceIntelligence from '../images/open-source-intelligence.png'
 import SocialEngineering from '../images/social-engineering.png'
+import insider from '../images/insider.png'
+import cyhy from '../images/cyhygiene.png'
+
+import ModalRedteam from '../components/modal/modal-redteam'
+import ModalPentest from '../components/modal/modal-pentest'
+import ModalApptest from '../components/modal/modal-apptest'
+import ModalWebtest from '../components/modal/modal-webtest'
+import ModalOpensource from '../components/modal/modal-opensource'
+import ModalSoceng from '../components/modal/modal-soceng'
+import ModalCyhy from '../components/modal/modal-cyhy'
+import ModalITP from '../components/modal/modal-itp'
 
 class ServicesPage extends React.Component {
   render() {
@@ -61,6 +72,7 @@ class ServicesPage extends React.Component {
                       penetration testing, application security testing, and
                       social engineering
                     </p>
+                    <ModalRedteam />
                   </div>
                 </ScrollAnimation>
               </div>
@@ -80,6 +92,7 @@ class ServicesPage extends React.Component {
                       Comprehensive risk, vulnerability, and penetration testing
                       intelligence with prioritized risk-rated recommendations
                     </p>
+                    <ModalPentest />
                   </div>
                 </ScrollAnimation>
               </div>
@@ -99,6 +112,8 @@ class ServicesPage extends React.Component {
                       Our security engineers will test vulnerabilities in your
                       custom or off the shelf applications
                     </p>
+                    <br />
+                    <ModalApptest />
                   </div>
                 </ScrollAnimation>
               </div>
@@ -118,6 +133,7 @@ class ServicesPage extends React.Component {
                       Our security engineers will test vulnerabilities in your
                       web, mobile, &amp; cloud applications
                     </p>
+                    <ModalWebtest />
                   </div>
                 </ScrollAnimation>
               </div>
@@ -137,6 +153,7 @@ class ServicesPage extends React.Component {
                       Open-source intelligence (OSINT) is intelligence collected
                       from publicly available sources
                     </p>
+                    <ModalOpensource />
                   </div>
                 </ScrollAnimation>
               </div>
@@ -156,6 +173,46 @@ class ServicesPage extends React.Component {
                       Phishing and phone campaigns to pinpoint your
                       vulnerabilities and promote awareness and education
                     </p>
+                    <br />
+                    <ModalSoceng />
+                  </div>
+                </ScrollAnimation>
+              </div>
+              <div className="col-md-6 col-lg-4 mb-4 props">
+                <ScrollAnimation animateIn="fadeIn" className="h-100">
+                  <div className="border rounded-0 shadow-lg val-prop">
+                    <img
+                      src={cyhy}
+                      alt="Social Engineering"
+                      className="img-fluid"
+                      width="150px"
+                    />
+                    <h4 className="font-weight-bold py-3">Cyber Hygiene</h4>
+                    <p className="m-0">
+                      Our proactive CyHy continually evaluates your
+                      organization's external security posture.
+                    </p>
+                    <ModalCyhy />
+                  </div>
+                </ScrollAnimation>
+              </div>
+              <div className="col-md-6 col-lg-4 mb-4 props">
+                <ScrollAnimation animateIn="fadeIn" className="h-100">
+                  <div className="border rounded-0 shadow-lg val-prop">
+                    <img
+                      src={insider}
+                      alt="Social Engineering"
+                      className="img-fluid"
+                      width="150px"
+                    />
+                    <h4 className="font-weight-bold py-3">
+                      Insider Threat Program
+                    </h4>
+                    <p className="m-0">
+                      Identifies potential ways an insider could threaten your
+                      organization.
+                    </p>
+                    <ModalITP />
                   </div>
                 </ScrollAnimation>
               </div>
