@@ -57,10 +57,10 @@ const ModalITP = props => {
             will review your organization and its relative threats to tailor a
             training program that is right for you. Our team compiles relevant
             statistical data and current threat trends that are provided within
-            instructional blocks designed to maximize employee participation and
-            result in a more security conscious climate and cultures. Employee
-            awareness and a security conscious culture will greatly assist in
-            reducing threats for your organization.
+            instructional blocks designed to maximize employee participation,
+            and result in a more security conscious climate and cultures.
+            Employee awareness and a security conscious culture will greatly
+            assist in reducing threats for your organization.
           </p>
           <img
             src={itp}
