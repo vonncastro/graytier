@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap'
+import itp from '../../images/itp-chart.png'
 
 const ModalITP = props => {
   const { className } = props
@@ -61,7 +62,12 @@ const ModalITP = props => {
             awareness and a security conscious culture will greatly assist in
             reducing threats for your organization.
           </p>
-
+          <img
+            src={itp}
+            alt="Penetration Testing"
+            className="img-fluid"
+            width="100%"
+          />
           <iframe
             title="Avail Our Services"
             src=""
