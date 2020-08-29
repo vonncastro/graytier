@@ -11,6 +11,7 @@ import csa from '../images/Gray_Tier_Tech_Capability-Statement-1.png'
 import ir from '../images/Gray_Tier_Tech_IR-1.png'
 import vps from '../images/Gray_Tier_Tech_VPS-1.png'
 import cyhy from '../images/Gray-Tier-Tech-CyHy.png'
+import int from '../images/Gray-Tier-Tech-InT.png'
 
 class PublicSectorPage extends React.Component {
   render() {
@@ -604,6 +605,23 @@ class PublicSectorPage extends React.Component {
                       download
                     >
                       Gray Tier CyHy (Cyber Hygiene)
+                    </a>
+                  </div>
+                  <div className="col-md-3 mt-3">
+                    <a
+                      href="/Gray_Tier_Tech_Int.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img className="img-fluid mb-3" src={int} alt="" />
+                    </a>
+                    <a
+                      href="/Gray_Tier_Tech_Int.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      download
+                    >
+                      Insider Threat (InT)
                     </a>
                   </div>
                 </div>
